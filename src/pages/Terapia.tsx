@@ -218,9 +218,9 @@ const Terapia = () => {
             <iframe
               src="https://hub.holaelo.app/agendar/silviagomezrinc-gmail-com"
               width="100%"
-              height="800"
+              height="1200"
               frameBorder="0"
-              className="w-full"
+              className="w-full min-h-[1200px]"
               title="Sistema de reserva de sesiones"
             />
           </div>
