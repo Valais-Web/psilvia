@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 import logo from "@/assets/logo.png";
+import { BookingDialog } from "@/components/BookingDialog";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,15 +30,15 @@ const Header = () => {
             <Link to="/sobre-mi" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
               Sobre mí
             </Link>
-            <Link to="/terapia#reserva">
+            <BookingDialog>
               <Button className="rounded-full">Agendar sesión</Button>
-            </Link>
+            </BookingDialog>
           </nav>
 
           <div className="flex items-center gap-2 md:hidden">
-            <Link to="/terapia#reserva">
+            <BookingDialog>
               <Button size="sm" className="rounded-full">Agendar</Button>
-            </Link>
+            </BookingDialog>
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger asChild>
                 <Button variant="ghost" size="icon" aria-label="Abrir menú">
@@ -74,13 +75,11 @@ const Header = () => {
                   >
                     Sobre mí
                   </Link>
-                  <Link 
-                    to="/terapia#reserva" 
-                    onClick={() => setIsOpen(false)}
-                    className="mt-4"
-                  >
-                    <Button className="w-full rounded-full">Agendar sesión</Button>
-                  </Link>
+                  <div className="mt-4">
+                    <BookingDialog>
+                      <Button className="w-full rounded-full">Agendar sesión</Button>
+                    </BookingDialog>
+                  </div>
                 </nav>
               </SheetContent>
             </Sheet>
