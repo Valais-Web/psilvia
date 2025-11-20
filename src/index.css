@@ -29,6 +29,9 @@ All colors MUST be HSL.
     --accent: 348 65% 79%;
     --accent-foreground: 67 15% 20%;
 
+    --badge: 72 16% 52%;
+    --badge-foreground: 0 0% 100%;
+
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
@@ -69,6 +72,9 @@ All colors MUST be HSL.
 
     --accent: 348 65% 79%;
     --accent-foreground: 67 15% 31%;
+
+    --badge: 72 16% 52%;
+    --badge-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 40 40% 98%;
