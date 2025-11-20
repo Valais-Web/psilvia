@@ -80,7 +80,7 @@ const Inicio = () => {
                     <span className="text-muted-foreground">Proceso estructurado, flexible y sin juicios</span>
                   </li>
                 </ul>
-                <Link to="/terapia" className="mt-auto">
+                <Link to="/terapia" className="mt-auto" onClick={() => window.scrollTo(0, 0)}>
                   <Button className="w-full rounded-full">Ver cómo trabajo</Button>
                 </Link>
               </CardContent>
@@ -106,7 +106,7 @@ const Inicio = () => {
                     <span className="text-muted-foreground">Material basado en TCC, ACT y DBT</span>
                   </li>
                 </ul>
-                <Link to="/para-psicologos" className="mt-auto">
+                <Link to="/para-psicologos" className="mt-auto" onClick={() => window.scrollTo(0, 0)}>
                   <Button className="w-full rounded-full">Ver material para psicólogos</Button>
                 </Link>
               </CardContent>
