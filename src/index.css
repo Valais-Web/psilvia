@@ -28,7 +28,9 @@ All colors MUST be HSL.
 
     --accent: 348 65% 79%;
     --accent-foreground: 67 15% 20%;
-
+    
+    --accent-hover: 348 45% 88%;
+    
     --badge: 72 16% 52%;
     --badge-foreground: 0 0% 100%;
 
@@ -72,6 +74,8 @@ All colors MUST be HSL.
 
     --accent: 348 65% 79%;
     --accent-foreground: 67 15% 31%;
+
+    --accent-hover: 348 45% 88%;
 
     --badge: 72 16% 52%;
     --badge-foreground: 0 0% 100%;
