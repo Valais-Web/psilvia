@@ -1,0 +1,203 @@
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Brain, Target, Heart, CheckCircle2 } from "lucide-react";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import silviaPhoto from "@/assets/silvia-photo.png";
+
+const Inicio = () => {
+  return (
+    <div className="min-h-screen bg-background">
+      <Header />
+      
+      {/* Hero Section */}
+      <section className="py-16 md:py-24">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="space-y-6">
+              <Badge className="bg-accent text-accent-foreground rounded-full px-4 py-1">
+                Psicoterapia online basada en la evidencia
+              </Badge>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
+                Psicoterapia online y recursos para psicólogos, desde la ciencia y con cercanía humana.
+              </h1>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Te ayudo a entender qué está pasando, por qué te sientes así y qué puedes hacer para cambiarlo. Trabajo desde enfoques cognitivo conductuales y contextuales, con sesiones online confidenciales y flexibles.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link to="/terapia">
+                  <Button size="lg" className="w-full sm:w-auto rounded-full">
+                    Quiero terapia
+                  </Button>
+                </Link>
+                <Link to="/para-psicologos">
+                  <Button size="lg" variant="outline" className="w-full sm:w-auto rounded-full">
+                    Soy psicoterapeuta
+                  </Button>
+                </Link>
+              </div>
+              <p className="text-sm text-muted-foreground">
+                Atención online para hispanohablantes que viven en cualquier parte del mundo.
+              </p>
+            </div>
+            <div className="hidden md:block">
+              <div className="aspect-square bg-gradient-to-br from-accent/20 to-secondary/20 rounded-3xl flex items-center justify-center">
+                <div className="text-center p-8">
+                  <div className="text-6xl mb-4">🌵</div>
+                  <p className="text-muted-foreground">Espacio seguro para tu crecimiento personal</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Audience Cards */}
+      <section className="py-16 bg-muted">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+          <div className="grid md:grid-cols-2 gap-8">
+            <Card className="border-2 hover:border-primary transition-all">
+              <CardContent className="p-8 space-y-6">
+                <h2 className="text-3xl font-bold text-foreground">Quiero terapia</h2>
+                <p className="text-muted-foreground">
+                  Sientes ansiedad, agotamiento, dificultad para poner límites o para disfrutar de tu día a día. Buscas un espacio seguro para entender lo que te pasa y empezar a cambiarlo.
+                </p>
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <span className="text-muted-foreground">Sesiones online de 55 minutos</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <span className="text-muted-foreground">Enfoques TCC, ACT y terapias contextuales</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <span className="text-muted-foreground">Proceso estructurado, flexible y sin juicios</span>
+                  </li>
+                </ul>
+                <Link to="/terapia">
+                  <Button className="w-full rounded-full">Ver cómo trabajo</Button>
+                </Link>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2 hover:border-primary transition-all">
+              <CardContent className="p-8 space-y-6">
+                <h2 className="text-3xl font-bold text-foreground">Soy psicoterapeuta</h2>
+                <p className="text-muted-foreground">
+                  Trabajas con enfoques cognitivo-conductuales y quieres materiales claros, aplicables y listos para usar en tus sesiones y tareas para casa.
+                </p>
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <span className="text-muted-foreground">Plantillas para entrevistas y sesiones</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <span className="text-muted-foreground">Ejercicios paso a paso para consultantes</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <span className="text-muted-foreground">Material basado en TCC, ACT y DBT</span>
+                  </li>
+                </ul>
+                <Link to="/para-psicologos">
+                  <Button className="w-full rounded-full">Ver material para psicólogos</Button>
+                </Link>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Cómo trabajo */}
+      <section className="py-16">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground">
+            Psicoterapia clara, estructurada y adaptada a tu vida
+          </h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="text-center space-y-4">
+              <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto">
+                <Brain className="h-8 w-8 text-primary" />
+              </div>
+              <h3 className="text-xl font-semibold text-foreground">Psicología científica</h3>
+              <p className="text-muted-foreground">
+                Trabajo desde modelos con respaldo empírico, integrando TCC, ACT, DBT y análisis funcional para entender qué mantiene tu malestar.
+              </p>
+            </div>
+
+            <div className="text-center space-y-4">
+              <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto">
+                <Target className="h-8 w-8 text-primary" />
+              </div>
+              <h3 className="text-xl font-semibold text-foreground">Plan compartido</h3>
+              <p className="text-muted-foreground">
+                Definimos juntas objetivos concretos y un plan de intervención con tareas entre sesiones y seguimiento continuo.
+              </p>
+            </div>
+
+            <div className="text-center space-y-4">
+              <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto">
+                <Heart className="h-8 w-8 text-primary" />
+              </div>
+              <h3 className="text-xl font-semibold text-foreground">Enfoque humano</h3>
+              <p className="text-muted-foreground">
+                Un espacio cercano, sin juicios, donde validamos tu experiencia mientras entrenamos habilidades nuevas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Band */}
+      <section className="py-12 bg-primary">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl text-center">
+          <p className="text-lg text-primary-foreground mb-6">
+            ¿Te resuena lo que lees? Podemos empezar con una primera sesión para explorar qué necesitas.
+          </p>
+          <Link to="/terapia#reserva">
+            <Button size="lg" variant="secondary" className="rounded-full">
+              Solicitar sesión
+            </Button>
+          </Link>
+        </div>
+      </section>
+
+      {/* Sobre Silvia */}
+      <section className="py-16">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="order-2 md:order-1">
+              <img
+                src={silviaPhoto}
+                alt="Retrato de Silvia Gómez, psicóloga, sonriendo, en un entorno luminoso y tranquilo"
+                className="rounded-3xl w-full max-w-md mx-auto shadow-lg"
+              />
+            </div>
+            <div className="space-y-4 order-1 md:order-2">
+              <Badge className="bg-accent text-accent-foreground rounded-full px-4 py-1">
+                Sobre Silvia
+              </Badge>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Soy Silvia Gómez, licenciada en Psicología. Cuento con dos maestrías en España y formación especializada en terapias de tercera generación. Combino la ciencia del comportamiento con una forma de acompañar cálida, clara y directa.
+              </p>
+              <Link to="/sobre-mi">
+                <Button variant="outline" className="rounded-full">
+                  Conocer más sobre mí
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <Footer />
+    </div>
+  );
+};
+
+export default Inicio;
