@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Instagram, MessageCircle } from "lucide-react";
+import valaisWebLogo from "@/assets/valaisweb-logo.png";
 
 const Footer = () => {
   return (
@@ -72,8 +73,17 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="mt-8 pt-8 border-t border-border text-center text-sm text-muted-foreground">
+        <div className="mt-8 pt-8 border-t border-border text-center text-sm text-muted-foreground space-y-3">
           <p>&copy; {new Date().getFullYear()} psilvia.com - Silvia Gomez. Todos los derechos reservados.</p>
+          <a 
+            href="https://valaisweb.ch" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 hover:opacity-80 transition-opacity"
+          >
+            <span className="text-xs">Website made by</span>
+            <img src={valaisWebLogo} alt="Valais Web" className="h-5" />
+          </a>
         </div>
       </div>
     </footer>
