@@ -168,7 +168,7 @@ const ParaPsicologos = () => {
       </section>
 
       {/* CTA Final */}
-      <section className="py-12 bg-primary">
+      <section className="pt-12 pb-0 bg-primary">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl text-center space-y-6">
           <p className="text-xl text-primary-foreground leading-relaxed">
             ¿Te interesa conocer los materiales disponibles o colaborar en la co-creación de recursos?
