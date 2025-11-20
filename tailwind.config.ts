@@ -38,6 +38,7 @@ export default {
         accent: {
           DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground))",
+          hover: "hsl(var(--accent-hover))",
         },
         badge: {
           DEFAULT: "hsl(var(--badge))",
