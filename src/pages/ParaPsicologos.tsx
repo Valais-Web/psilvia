@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { FileText, BookOpen, Lightbulb, Mail } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import mentalWellness from "@/assets/mental-wellness.jpg";
 
 const ParaPsicologos = () => {
   return (
@@ -90,33 +91,40 @@ const ParaPsicologos = () => {
             Pensado para tu realidad clínica
           </h2>
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
+            <div className="order-2 md:order-1">
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                 El tiempo entre sesiones es limitado. La idea de estos materiales es que no tengas que empezar de cero cada vez, sino adaptar plantillas sólidas a la singularidad de cada consultante.
               </p>
+              <div className="space-y-4">
+                <Card>
+                  <CardContent className="p-4">
+                    <p className="text-muted-foreground">
+                      ✓ Formato digital listo para imprimir o compartir en pantalla
+                    </p>
+                  </CardContent>
+                </Card>
+                <Card>
+                  <CardContent className="p-4">
+                    <p className="text-muted-foreground">
+                      ✓ Lenguaje en español claro y sin tecnicismos innecesarios
+                    </p>
+                  </CardContent>
+                </Card>
+                <Card>
+                  <CardContent className="p-4">
+                    <p className="text-muted-foreground">
+                      ✓ Posibilidad de personalizar y complementar con tus propias notas
+                    </p>
+                  </CardContent>
+                </Card>
+              </div>
             </div>
-            <div className="space-y-4">
-              <Card>
-                <CardContent className="p-4">
-                  <p className="text-muted-foreground">
-                    ✓ Formato digital listo para imprimir o compartir en pantalla
-                  </p>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardContent className="p-4">
-                  <p className="text-muted-foreground">
-                    ✓ Lenguaje en español claro y sin tecnicismos innecesarios
-                  </p>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardContent className="p-4">
-                  <p className="text-muted-foreground">
-                    ✓ Posibilidad de personalizar y complementar con tus propias notas
-                  </p>
-                </CardContent>
-              </Card>
+            <div className="order-1 md:order-2">
+              <img 
+                src={mentalWellness}
+                alt="Ilustración de bienestar mental y crecimiento profesional en psicoterapia" 
+                className="w-full h-auto rounded-3xl shadow-lg"
+              />
             </div>
           </div>
         </div>
