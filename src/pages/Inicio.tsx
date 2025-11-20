@@ -29,7 +29,7 @@ const Inicio = () => {
                 Te ayudo a entender qué está pasando, por qué te sientes así y qué puedes hacer para cambiarlo. Trabajo desde enfoques cognitivo conductuales y contextuales, con sesiones online confidenciales y flexibles.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link to="/terapia">
+                <Link to="/terapia#reserva">
                   <Button size="lg" className="w-full sm:w-auto rounded-full">
                     Quiero terapia
                   </Button>
