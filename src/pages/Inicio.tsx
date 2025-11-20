@@ -200,7 +200,7 @@ const Inicio = () => {
               <p className="text-lg text-muted-foreground leading-relaxed">
                 Soy Silvia Gómez, licenciada en Psicología. Cuento con dos maestrías en España y formación especializada en terapias de tercera generación. Combino la ciencia del comportamiento con una forma de acompañar cálida, clara y directa.
               </p>
-              <Link to="/sobre-mi">
+              <Link to="/sobre-mi" className="inline-block mt-6">
                 <Button variant="outline" className="rounded-full">
                   Conocer más sobre mí
                 </Button>
