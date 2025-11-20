@@ -17,30 +17,39 @@ const Terapia = () => {
       
       {/* Hero Section */}
       <section className="py-16 md:py-24 bg-gradient-to-b from-muted/50 to-background">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
-          <div className="text-center space-y-6">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground">
-              Psicoterapia online
-            </h1>
-            <p className="text-xl text-muted-foreground leading-relaxed">
-              A veces no necesitas empezar de cero, solo entender mejor lo que te está pasando. Te acompaño a ponerle nombre a lo que sientes, entender por qué se mantiene y entrenar nuevas formas de actuar para vivir con más calma y sentido.
-            </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Trabajo desde la psicología científica y el análisis funcional para ayudarte a comprender por qué te sientes, piensas o actúas de cierta manera, y qué puedes hacer para generar un cambio real y sostenible.
-            </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Las sesiones se realizan de forma online, en un espacio confidencial, flexible y seguro, para que puedas cuidar tu bienestar emocional desde donde estés.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-              <Button size="lg" onClick={scrollToReserva} className="rounded-full">
-                Solicitar sesión
-              </Button>
-              <a href="mailto:silviagomez.psic@gmail.com">
-                <Button size="lg" variant="outline" className="rounded-full w-full sm:w-auto">
-                  <Mail className="mr-2 h-5 w-5" />
-                  Escribirme una duda
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+            <div className="space-y-6 order-2 md:order-1">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground">
+                Psicoterapia online
+              </h1>
+              <p className="text-xl text-muted-foreground leading-relaxed">
+                A veces no necesitas empezar de cero, solo entender mejor lo que te está pasando. Te acompaño a ponerle nombre a lo que sientes, entender por qué se mantiene y entrenar nuevas formas de actuar para vivir con más calma y sentido.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Trabajo desde la psicología científica y el análisis funcional para ayudarte a comprender por qué te sientes, piensas o actúas de cierta manera, y qué puedes hacer para generar un cambio real y sostenible.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Las sesiones se realizan de forma online, en un espacio confidencial, flexible y seguro, para que puedas cuidar tu bienestar emocional desde donde estés.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                <Button size="lg" onClick={scrollToReserva} className="rounded-full">
+                  Solicitar sesión
                 </Button>
-              </a>
+                <a href="mailto:silviagomez.psic@gmail.com" className="w-full sm:w-auto">
+                  <Button size="lg" variant="outline" className="rounded-full w-full">
+                    <Mail className="mr-2 h-5 w-5" />
+                    Escribirme una duda
+                  </Button>
+                </a>
+              </div>
+            </div>
+            <div className="order-1 md:order-2">
+              <img 
+                src="/src/assets/silvia-photo.png" 
+                alt="Silvia Gómez, psicoterapeuta" 
+                className="w-full h-auto rounded-2xl shadow-lg"
+              />
             </div>
           </div>
         </div>
