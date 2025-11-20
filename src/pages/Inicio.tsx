@@ -19,7 +19,7 @@ const Inicio = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <Badge className="bg-accent text-foreground rounded-full px-6 py-2 text-base font-medium pointer-events-none">
+              <Badge className="bg-primary text-primary-foreground rounded-full px-6 py-2 text-base font-medium pointer-events-none">
                 Psicoterapia online basada en la evidencia
               </Badge>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
@@ -194,7 +194,7 @@ const Inicio = () => {
               />
             </div>
             <div className="space-y-4 order-1 md:order-2">
-              <Badge className="bg-accent text-foreground rounded-full px-6 py-2 text-base font-medium pointer-events-none">
+              <Badge className="bg-primary text-primary-foreground rounded-full px-6 py-2 text-base font-medium pointer-events-none">
                 Sobre Silvia
               </Badge>
               <p className="text-lg text-muted-foreground leading-relaxed">
