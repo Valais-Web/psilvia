@@ -1,8 +1,13 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Menu } from "lucide-react";
 import logo from "@/assets/logo.png";
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <header className="sticky top-0 z-50 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80 border-b border-border">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
@@ -29,11 +34,52 @@ const Header = () => {
             </Link>
           </nav>
 
-          <div className="md:hidden">
-            <Link to="/terapia#reserva">
-              <Button size="sm" className="rounded-full">Agendar</Button>
-            </Link>
-          </div>
+          <Sheet open={isOpen} onOpenChange={setIsOpen}>
+            <SheetTrigger asChild className="md:hidden">
+              <Button variant="ghost" size="icon" aria-label="Abrir menú">
+                <Menu className="h-6 w-6" />
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="right" className="w-[300px] sm:w-[400px]">
+              <nav className="flex flex-col gap-6 mt-8">
+                <Link 
+                  to="/" 
+                  className="text-lg font-medium text-foreground hover:text-primary transition-colors"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Inicio
+                </Link>
+                <Link 
+                  to="/terapia" 
+                  className="text-lg font-medium text-foreground hover:text-primary transition-colors"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Terapia
+                </Link>
+                <Link 
+                  to="/para-psicologos" 
+                  className="text-lg font-medium text-foreground hover:text-primary transition-colors"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Para psicólogos
+                </Link>
+                <Link 
+                  to="/sobre-mi" 
+                  className="text-lg font-medium text-foreground hover:text-primary transition-colors"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Sobre mí
+                </Link>
+                <Link 
+                  to="/terapia#reserva" 
+                  onClick={() => setIsOpen(false)}
+                  className="mt-4"
+                >
+                  <Button className="w-full rounded-full">Agendar sesión</Button>
+                </Link>
+              </nav>
+            </SheetContent>
+          </Sheet>
         </div>
       </div>
     </header>
