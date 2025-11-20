@@ -6,6 +6,8 @@ import { Brain, Target, Heart, CheckCircle2 } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import silviaPhoto from "@/assets/silvia-photo.png";
+import therapyWorkspace from "@/assets/therapy-workspace.jpg";
+import mentalWellness from "@/assets/mental-wellness.jpg";
 
 const Inicio = () => {
   return (
@@ -17,7 +19,7 @@ const Inicio = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <Badge className="bg-accent text-accent-foreground rounded-full px-4 py-1">
+              <Badge className="bg-accent text-foreground rounded-full px-6 py-2 text-base font-medium pointer-events-none">
                 Psicoterapia online basada en la evidencia
               </Badge>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
@@ -42,13 +44,12 @@ const Inicio = () => {
                 Atención online para hispanohablantes que viven en cualquier parte del mundo.
               </p>
             </div>
-            <div className="hidden md:block">
-              <div className="aspect-square bg-gradient-to-br from-accent/20 to-secondary/20 rounded-3xl flex items-center justify-center">
-                <div className="text-center p-8">
-                  <div className="text-6xl mb-4">🌵</div>
-                  <p className="text-muted-foreground">Espacio seguro para tu crecimiento personal</p>
-                </div>
-              </div>
+            <div>
+              <img
+                src={silviaPhoto}
+                alt="Espacio seguro y acogedor para psicoterapia online con ambiente cálido y tranquilo"
+                className="rounded-3xl w-full max-w-md mx-auto shadow-lg"
+              />
             </div>
           </div>
         </div>
@@ -59,12 +60,12 @@ const Inicio = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="grid md:grid-cols-2 gap-8">
             <Card className="border-2 hover:border-primary transition-all">
-              <CardContent className="p-8 space-y-6">
-                <h2 className="text-3xl font-bold text-foreground">Quiero terapia</h2>
-                <p className="text-muted-foreground">
+              <CardContent className="p-8 flex flex-col h-full">
+                <h2 className="text-3xl font-bold text-foreground mb-4">Quiero terapia</h2>
+                <p className="text-muted-foreground mb-6">
                   Sientes ansiedad, agotamiento, dificultad para poner límites o para disfrutar de tu día a día. Buscas un espacio seguro para entender lo que te pasa y empezar a cambiarlo.
                 </p>
-                <ul className="space-y-3">
+                <ul className="space-y-3 mb-8 flex-grow">
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                     <span className="text-muted-foreground">Sesiones online de 55 minutos</span>
@@ -78,19 +79,19 @@ const Inicio = () => {
                     <span className="text-muted-foreground">Proceso estructurado, flexible y sin juicios</span>
                   </li>
                 </ul>
-                <Link to="/terapia">
+                <Link to="/terapia" className="mt-auto">
                   <Button className="w-full rounded-full">Ver cómo trabajo</Button>
                 </Link>
               </CardContent>
             </Card>
 
             <Card className="border-2 hover:border-primary transition-all">
-              <CardContent className="p-8 space-y-6">
-                <h2 className="text-3xl font-bold text-foreground">Soy psicoterapeuta</h2>
-                <p className="text-muted-foreground">
+              <CardContent className="p-8 flex flex-col h-full">
+                <h2 className="text-3xl font-bold text-foreground mb-4">Soy psicoterapeuta</h2>
+                <p className="text-muted-foreground mb-6">
                   Trabajas con enfoques cognitivo-conductuales y quieres materiales claros, aplicables y listos para usar en tus sesiones y tareas para casa.
                 </p>
-                <ul className="space-y-3">
+                <ul className="space-y-3 mb-8 flex-grow">
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                     <span className="text-muted-foreground">Plantillas para entrevistas y sesiones</span>
@@ -104,7 +105,7 @@ const Inicio = () => {
                     <span className="text-muted-foreground">Material basado en TCC, ACT y DBT</span>
                   </li>
                 </ul>
-                <Link to="/para-psicologos">
+                <Link to="/para-psicologos" className="mt-auto">
                   <Button className="w-full rounded-full">Ver material para psicólogos</Button>
                 </Link>
               </CardContent>
@@ -116,9 +117,23 @@ const Inicio = () => {
       {/* Cómo trabajo */}
       <section className="py-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground">
-            Psicoterapia clara, estructurada y adaptada a tu vida
-          </h2>
+          <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
+                Psicoterapia clara, estructurada y adaptada a tu vida
+              </h2>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Un espacio donde la ciencia del comportamiento se encuentra con la calidez humana. Trabajamos juntos para que encuentres claridad, flexibilidad y dirección hacia una vida con sentido.
+              </p>
+            </div>
+            <div>
+              <img
+                src={therapyWorkspace}
+                alt="Espacio de trabajo cálido y acogedor para terapia online con laptop, té y plantas"
+                className="rounded-3xl w-full shadow-lg"
+              />
+            </div>
+          </div>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center space-y-4">
               <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto">
@@ -168,7 +183,7 @@ const Inicio = () => {
       </section>
 
       {/* Sobre Silvia */}
-      <section className="py-16">
+      <section className="py-16 pb-0">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1">
@@ -179,7 +194,7 @@ const Inicio = () => {
               />
             </div>
             <div className="space-y-4 order-1 md:order-2">
-              <Badge className="bg-accent text-accent-foreground rounded-full px-4 py-1">
+              <Badge className="bg-accent text-foreground rounded-full px-6 py-2 text-base font-medium pointer-events-none">
                 Sobre Silvia
               </Badge>
               <p className="text-lg text-muted-foreground leading-relaxed">

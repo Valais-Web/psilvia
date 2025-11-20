@@ -4,6 +4,8 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { CheckCircle2, Mail } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import silviaPhoto from "@/assets/silvia-photo.png";
+import selfCare from "@/assets/self-care.jpg";
 
 const Terapia = () => {
   const scrollToReserva = () => {
@@ -46,7 +48,7 @@ const Terapia = () => {
             </div>
             <div className="order-1 md:order-2">
               <img 
-                src="/src/assets/silvia-photo.png" 
+                src={silviaPhoto}
                 alt="Silvia Gómez, psicoterapeuta" 
                 className="w-full h-auto rounded-2xl shadow-lg"
               />
@@ -175,14 +177,28 @@ const Terapia = () => {
       </section>
 
       {/* Te ayudo a */}
-      <section className="py-12 bg-primary">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl text-center">
-          <p className="text-xl text-primary-foreground mb-6 leading-relaxed">
-            Te ayudo a desarrollar las habilidades necesarias para vivir una vida plena y construir relaciones saludables. Junt@s creamos un plan de intervención adaptado a tu individualidad y a tu contexto.
-          </p>
-          <Button size="lg" variant="secondary" onClick={scrollToReserva} className="rounded-full">
-            Empezar mi proceso
-          </Button>
+      <section className="py-16 bg-muted">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <img 
+                src={selfCare}
+                alt="Ilustración de autocuidado y bienestar emocional en terapia" 
+                className="w-full h-auto rounded-3xl shadow-lg"
+              />
+            </div>
+            <div className="space-y-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+                Te ayudo a…
+              </h2>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Te ayudo a desarrollar las habilidades necesarias para vivir una vida plena y construir relaciones saludables. Junt@s creamos un plan de intervención adaptado a tu individualidad y a tu contexto.
+              </p>
+              <Button size="lg" onClick={scrollToReserva} className="rounded-full">
+                Empezar mi proceso
+              </Button>
+            </div>
+          </div>
         </div>
       </section>
 
