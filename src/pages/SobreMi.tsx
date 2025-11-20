@@ -83,7 +83,7 @@ const SobreMi = () => {
       </section>
 
       {/* CTA Final */}
-      <section className="pt-16 pb-0">
+      <section className="pt-16 pb-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
           <div className="text-center space-y-6 bg-gradient-to-br from-accent/10 to-secondary/10 rounded-3xl p-12">
             <p className="text-xl text-muted-foreground leading-relaxed">
