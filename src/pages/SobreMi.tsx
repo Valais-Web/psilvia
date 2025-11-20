@@ -27,7 +27,7 @@ const SobreMi = () => {
             </div>
             
             <div className="space-y-6 order-1 md:order-2">
-              <Badge className="bg-primary text-primary-foreground rounded-full px-6 py-2 text-base font-medium pointer-events-none">
+              <Badge className="bg-badge text-badge-foreground rounded-full px-6 py-2 text-base font-medium pointer-events-none">
                 Silvia Gómez
               </Badge>
               
