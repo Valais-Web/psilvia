@@ -8,6 +8,7 @@ import Footer from "@/components/Footer";
 import silviaPhoto from "@/assets/silvia-photo.png";
 import therapyWorkspace from "@/assets/therapy-workspace.jpg";
 import mentalWellness from "@/assets/mental-wellness.jpg";
+import { BookingDialog } from "@/components/BookingDialog";
 
 const Inicio = () => {
   return (
@@ -79,7 +80,7 @@ const Inicio = () => {
                     <span className="text-muted-foreground">Proceso estructurado, flexible y sin juicios</span>
                   </li>
                 </ul>
-                <Link to="/terapia" className="mt-auto">
+                <Link to="/terapia" className="mt-auto" onClick={() => window.scrollTo(0, 0)}>
                   <Button className="w-full rounded-full">Ver cómo trabajo</Button>
                 </Link>
               </CardContent>
@@ -105,7 +106,7 @@ const Inicio = () => {
                     <span className="text-muted-foreground">Material basado en TCC, ACT y DBT</span>
                   </li>
                 </ul>
-                <Link to="/para-psicologos" className="mt-auto">
+                <Link to="/para-psicologos" className="mt-auto" onClick={() => window.scrollTo(0, 0)}>
                   <Button className="w-full rounded-full">Ver material para psicólogos</Button>
                 </Link>
               </CardContent>
@@ -174,11 +175,11 @@ const Inicio = () => {
           <p className="text-lg text-primary-foreground mb-6">
             ¿Te resuena lo que lees? Podemos empezar con una primera sesión para explorar qué necesitas.
           </p>
-          <Link to="/terapia#reserva">
+          <BookingDialog>
             <Button size="lg" variant="secondary" className="rounded-full">
-              Solicitar sesión
+              Agendar sesión
             </Button>
-          </Link>
+          </BookingDialog>
         </div>
       </section>
 

@@ -4,6 +4,7 @@ import { Mail } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import silviaPhoto from "@/assets/silvia-photo.png";
+import { BookingDialog } from "@/components/BookingDialog";
 
 const SobreMi = () => {
   return (
@@ -90,11 +91,11 @@ const SobreMi = () => {
               Si sientes que podría acompañarte en este momento, puedes agendar una primera sesión o escribirme para resolver cualquier duda.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-              <a href="/terapia#reserva">
+              <BookingDialog>
                 <Button size="lg" className="w-full sm:w-auto rounded-full">
-                  Agenda tu primera sesión
+                  Agendar sesión
                 </Button>
-              </a>
+              </BookingDialog>
               <a href="mailto:silviagomez.psic@gmail.com">
                 <Button size="lg" variant="outline" className="w-full sm:w-auto rounded-full">
                   <Mail className="mr-2 h-5 w-5" />

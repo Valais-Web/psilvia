@@ -36,7 +36,7 @@ const Terapia = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
                 <Button size="lg" onClick={scrollToReserva} className="rounded-full">
-                  Solicitar sesión
+                  Agendar sesión
                 </Button>
                 <a href="mailto:silviagomez.psic@gmail.com" className="w-full sm:w-auto">
                   <Button size="lg" variant="outline" className="rounded-full w-full">
