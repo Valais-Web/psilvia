@@ -214,17 +214,16 @@ const Terapia = () => {
             </p>
           </div>
           
-          <Card className="border-2 border-dashed border-border">
-            <CardContent className="p-12 text-center space-y-4">
-              <div className="text-6xl mb-4">📅</div>
-              <p className="text-lg text-muted-foreground">
-                [Aquí integrar el Calendly de Silvia para reserva de sesiones]
-              </p>
-              <p className="text-sm text-muted-foreground italic">
-                Widget de Calendly se integrará aquí
-              </p>
-            </CardContent>
-          </Card>
+          <div className="w-full rounded-lg overflow-hidden shadow-lg">
+            <iframe
+              src="https://hub.holaelo.app/agendar/silviagomezrinc-gmail-com"
+              width="100%"
+              height="1200"
+              frameBorder="0"
+              className="w-full min-h-[1200px]"
+              title="Sistema de reserva de sesiones"
+            />
+          </div>
 
           <p className="text-center text-sm text-muted-foreground mt-6">
             Las sesiones duran aproximadamente 55 minutos y suelen ser semanales o quincenales, según tus necesidades y evolución.
