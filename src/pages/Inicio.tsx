@@ -5,7 +5,8 @@ import { Badge } from "@/components/ui/badge";
 import { Brain, Target, Heart, CheckCircle2 } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import silviaPhoto from "@/assets/silvia-photo.png";
+import silviaPhoto from "@/assets/Silvia1.webp";
+import silviaPhoto2 from "@/assets/Silvia3.webp";
 import therapyWorkspace from "@/assets/therapy-workspace.jpg";
 import mentalWellness from "@/assets/mental-wellness.jpg";
 import { BookingDialog } from "@/components/BookingDialog";
@@ -14,7 +15,7 @@ const Inicio = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      
+
       {/* Hero Section */}
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
@@ -189,7 +190,7 @@ const Inicio = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1">
               <img
-                src={silviaPhoto}
+                src={silviaPhoto2}
                 alt="Retrato de Silvia Gómez, psicóloga, sonriendo, en un entorno luminoso y tranquilo"
                 className="rounded-3xl w-full max-w-md mx-auto shadow-lg"
               />

@@ -4,7 +4,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { CheckCircle2, Mail } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import silviaPhoto from "@/assets/silvia-photo.png";
+import silviaPhoto from "@/assets/Silvia5.webp";
 import selfCare from "@/assets/self-care.jpg";
 
 const Terapia = () => {
@@ -16,7 +16,7 @@ const Terapia = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      
+
       {/* Hero Section */}
       <section className="py-16 md:py-24 bg-gradient-to-b from-muted/50 to-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
@@ -47,9 +47,9 @@ const Terapia = () => {
               </div>
             </div>
             <div className="order-1 md:order-2">
-              <img 
+              <img
                 src={silviaPhoto}
-                alt="Silvia Gómez, psicoterapeuta" 
+                alt="Silvia Gómez, psicoterapeuta"
                 className="w-full h-auto rounded-2xl shadow-lg"
               />
             </div>
@@ -181,9 +181,9 @@ const Terapia = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <img 
+              <img
                 src={selfCare}
-                alt="Ilustración de autocuidado y bienestar emocional en terapia" 
+                alt="Ilustración de autocuidado y bienestar emocional en terapia"
                 className="w-full h-auto rounded-3xl shadow-lg"
               />
             </div>
@@ -213,7 +213,7 @@ const Terapia = () => {
               Puedes agendar tu sesión directamente en el calendario según tu huso horario. Si no encuentras un horario que te funcione, escríbeme y lo revisamos.
             </p>
           </div>
-          
+
           <div className="w-full rounded-lg overflow-hidden shadow-lg">
             <iframe
               src="https://hub.holaelo.app/agendar/silviagomezrinc-gmail-com"
@@ -237,7 +237,7 @@ const Terapia = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground">
             Preguntas frecuentes
           </h2>
-          
+
           <Accordion type="single" collapsible className="space-y-4">
             <AccordionItem value="item-1" className="bg-background rounded-lg px-6">
               <AccordionTrigger className="text-left font-semibold">
