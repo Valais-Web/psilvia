@@ -13,7 +13,7 @@ export const BookingDialog = ({ children }: BookingDialogProps) => {
       </DialogTrigger>
       <DialogContent className="max-w-4xl w-full max-h-[90vh] p-0">
         <iframe
-          src="https://hub.holaelo.app/agendar/psilvia-gmail-com"
+          src="https://hub.holaelo.app/agendar/psilvia"
           className="w-full h-[80vh] min-h-[600px] border-0 rounded-md"
           title="Agendar sesión con Silvia Gómez"
         />
