@@ -1,140 +1,89 @@
 import { SEOPageLayout } from "@/components/SEOPageLayout";
+import { CheckCircle2 } from "lucide-react";
 
 const AdaptacionCulturalSuiza = () => {
+  const faqs = [
+    {
+      question: "¿Qué es el duelo migratorio?",
+      answer: "El duelo migratorio son las pérdidas que implica migrar: familia, amigos, estatus, idioma, paisaje, y una versión de ti mismo. A diferencia de otros duelos, es invisible socialmente y puede reactivarse en momentos específicos."
+    },
+    {
+      question: "¿Es normal sentirse entre dos mundos?",
+      answer: "Sí, es una experiencia muy común entre migrantes. Sentir que no perteneces completamente ni aquí ni allá, que tienes que negociar constantemente entre diferentes versiones de ti mismo. En terapia trabajamos para integrar estas partes."
+    },
+    {
+      question: "¿Cuánto tiempo toma adaptarse culturalmente?",
+      answer: "La adaptación cultural es un proceso continuo que puede tomar años. No hay un punto final donde 'ya estás adaptado'. Lo que trabajamos en terapia es que el proceso sea menos doloroso y más consciente."
+    },
+    {
+      question: "¿Por qué me siento triste si objetivamente todo está bien?",
+      answer: "El bienestar externo (buen trabajo, calidad de vida) no garantiza el bienestar emocional. Las pérdidas del duelo migratorio son reales aunque invisibles. Tus sentimientos son válidos independientemente de tus circunstancias."
+    },
+    {
+      question: "¿Cómo puedo mantener mi identidad mientras me integro?",
+      answer: "No tienes que elegir entre ser quien eras y adaptarte. Trabajamos para encontrar un equilibrio que integre ambas partes, manteniendo lo esencial de tu identidad mientras desarrollas nuevas facetas."
+    }
+  ];
+
   return (
     <SEOPageLayout
       title="Adaptación cultural en Suiza | Psicoterapia online para expatriados"
       description="Psicoterapia online para personas en proceso de adaptación cultural en Suiza. Atención psicológica en español."
+      heroTitle="Adaptación cultural y duelo migratorio"
+      heroSubtitle="Acompañamiento psicológico para procesar las pérdidas de la migración y construir una nueva vida sin renunciar a quien eres."
+      badgeText="Expatriados y migrantes"
+      faqs={faqs}
       disclaimer="Información legal: Los servicios ofrecidos corresponden a psicoterapia privada en modalidad online. No forman parte del sistema sanitario suizo ni están cubiertos por seguros médicos en Suiza. La formación profesional fue obtenida en instituciones de México y España."
     >
-      <h1 className="text-3xl md:text-4xl font-semibold text-foreground mb-8">
-        Adaptación cultural y duelo migratorio en Suiza
-      </h1>
-
-      <p className="text-foreground leading-relaxed mb-6">
-        Mudarse a Suiza representa una oportunidad extraordinaria para muchas personas: estabilidad económica, calidad de vida, acceso a servicios de primer nivel, y la posibilidad de construir un futuro en uno de los países más prósperos del mundo. Sin embargo, detrás de esta imagen de éxito, existe una realidad emocional que raramente se menciona: el proceso de adaptación cultural es profundamente demandante, y puede generar un tipo de malestar que es difícil de explicar a quienes no lo han vivido.
+      <h2 className="text-2xl font-semibold mt-8 mb-4">
+        Más allá de las diferencias superficiales
+      </h2>
+      
+      <p>
+        El choque cultural va más profundo que el idioma o las costumbres. Se trata de un desajuste fundamental entre la forma en que has aprendido a entender el mundo y cómo funciona el nuevo entorno. En Suiza, esto puede manifestarse en las reglas implícitas de interacción social, el nivel de expresividad emocional aceptable, o el equilibrio entre lo personal y lo profesional.
       </p>
 
-      <p className="text-foreground leading-relaxed mb-6">
-        Soy Silvia Gómez, Licenciada en Psicología en México con formación de posgrado en Psicoterapia Cognitivo-Conductual en España. Acompaño a personas hispanohablantes que viven en Suiza y que atraviesan desafíos relacionados con la adaptación cultural, el duelo migratorio y la construcción de una nueva identidad en un país extranjero.
-      </p>
-
-      <h2 className="text-2xl font-medium text-foreground mt-10 mb-4">
-        El choque cultural: más allá de las diferencias superficiales
+      <h2 className="text-2xl font-semibold mt-10 mb-4">
+        Las pérdidas del duelo migratorio
       </h2>
 
-      <p className="text-foreground leading-relaxed mb-6">
-        Cuando pensamos en choque cultural, solemos imaginar diferencias evidentes: el idioma, la comida, el clima, las costumbres sociales. Pero el choque cultural va mucho más profundo. Se trata de un desajuste fundamental entre la forma en que has aprendido a entender el mundo y la forma en que funciona el nuevo entorno.
-      </p>
+      <div className="grid md:grid-cols-2 gap-4 my-8 not-prose">
+        <div className="flex items-start gap-3 p-4 bg-muted rounded-lg">
+          <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+          <span className="text-foreground">Familia y amigos cercanos</span>
+        </div>
+        <div className="flex items-start gap-3 p-4 bg-muted rounded-lg">
+          <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+          <span className="text-foreground">Estatus y lugar en la comunidad</span>
+        </div>
+        <div className="flex items-start gap-3 p-4 bg-muted rounded-lg">
+          <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+          <span className="text-foreground">Códigos culturales compartidos</span>
+        </div>
+        <div className="flex items-start gap-3 p-4 bg-muted rounded-lg">
+          <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+          <span className="text-foreground">Paisaje, olores, sonidos de tu tierra</span>
+        </div>
+      </div>
 
-      <p className="text-foreground leading-relaxed mb-6">
-        En Suiza, este desajuste puede manifestarse de muchas maneras para las personas que vienen de culturas latinoamericanas o españolas. Las reglas implícitas de la interacción social son diferentes: la manera de saludar, la distancia física en las conversaciones, el nivel de expresividad emocional aceptable, el equilibrio entre lo personal y lo profesional. Lo que en tu cultura de origen era señal de calidez (un abrazo, una conversación animada, una invitación espontánea) puede ser percibido de manera diferente aquí.
-      </p>
-
-      <p className="text-foreground leading-relaxed mb-6">
-        La cultura suiza valora la privacidad, la puntualidad, el orden y la discreción. Estas no son necesariamente virtudes ni defectos; son simplemente formas diferentes de organizar la vida social. Pero cuando vienes de una cultura donde la espontaneidad, la expresividad y la cercanía física son la norma, adaptarse puede sentirse como tener que reprimir partes fundamentales de quién eres.
-      </p>
-
-      <h2 className="text-2xl font-medium text-foreground mt-10 mb-4">
-        Cambios en la identidad
+      <h2 className="text-2xl font-semibold mt-10 mb-4">
+        Trabajo terapéutico en adaptación cultural
       </h2>
-
-      <p className="text-foreground leading-relaxed mb-6">
-        Migrar implica, inevitablemente, un proceso de transformación identitaria. La persona que eras en tu país de origen no puede existir exactamente igual en el nuevo contexto. Esto no significa que debas abandonar quién eres, pero sí que tendrás que negociar constantemente entre diferentes versiones de ti mismo.
-      </p>
-
-      <p className="text-foreground leading-relaxed mb-6">
-        Algunas personas describen esta experiencia como sentirse "entre dos mundos": no completamente de aquí ni completamente de allá. En el trabajo puede que seas una versión más contenida de ti mismo; con la familia en videollamada, otra versión; con los pocos amigos hispanohablantes que has encontrado, otra más. Esta fragmentación puede ser agotadora y confusa.
-      </p>
-
-      <p className="text-foreground leading-relaxed mb-6">
-        Hay preguntas que surgen inevitablemente: ¿Cuánto debo cambiar para integrarme? ¿Estoy perdiendo mi esencia? ¿Mis hijos serán más suizos que latinos? ¿Qué pasará si algún día quiero volver? Estas preguntas no tienen respuestas sencillas, y el proceso de explorarlas puede generar ansiedad, tristeza o confusión.
-      </p>
-
-      <h2 className="text-2xl font-medium text-foreground mt-10 mb-4">
-        La ambivalencia emocional del migrante
-      </h2>
-
-      <p className="text-foreground leading-relaxed mb-6">
-        Una de las experiencias más características de la migración es la ambivalencia emocional. Es posible sentir simultáneamente gratitud por las oportunidades que ofrece Suiza y nostalgia profunda por lo que dejaste atrás. Es posible amar la calidad de vida aquí y extrañar intensamente el caos vibrante de tu ciudad de origen. Es posible sentirse orgulloso de lo que has logrado y, al mismo tiempo, cuestionarte si todo valió la pena.
-      </p>
-
-      <p className="text-foreground leading-relaxed mb-6">
-        Esta ambivalencia no es señal de que algo esté mal contigo; es una respuesta natural a una situación compleja. El problema surge cuando no hay espacio para reconocer y procesar estos sentimientos contradictorios. Cuando sientes que deberías estar solo agradecido, solo feliz, solo satisfecho, y cualquier otra emoción se siente como ingratitud o fracaso.
-      </p>
-
-      <p className="text-foreground leading-relaxed mb-6">
-        En terapia, creamos un espacio donde todos estos sentimientos pueden coexistir sin juicio. Donde puedes explorar la complejidad de tu experiencia sin tener que simplificarla para hacerla más digerible.
-      </p>
-
-      <h2 className="text-2xl font-medium text-foreground mt-10 mb-4">
-        El duelo migratorio: las pérdidas que no se ven
-      </h2>
-
-      <p className="text-foreground leading-relaxed mb-6">
-        Migrar implica pérdidas que no siempre son reconocidas como tales. A diferencia del duelo por la muerte de un ser querido, el duelo migratorio es difuso, crónico y socialmente invisible. Nadie te envía condolencias por haber dejado tu país; se espera que estés contento por la oportunidad.
-      </p>
-
-      <p className="text-foreground leading-relaxed mb-6">
-        Las pérdidas del duelo migratorio incluyen:
-      </p>
-
-      <ul className="list-disc pl-6 mb-6 space-y-2 text-foreground">
-        <li><strong>Pérdida de la familia y amigos cercanos:</strong> No estar presente en cumpleaños, nacimientos, enfermedades, celebraciones. La vida de los seres queridos continúa sin ti, y tú continúas sin ellos.</li>
-        <li><strong>Pérdida del estatus:</strong> En tu país eras conocido, tenías una reputación, un lugar en la comunidad. Aquí empiezas de cero, a menudo en una posición inferior a la que tenías.</li>
-        <li><strong>Pérdida del grupo de pertenencia:</strong> Los códigos culturales compartidos, el sentido del humor, las referencias comunes, todo eso queda atrás.</li>
-        <li><strong>Pérdida del paisaje:</strong> Los olores, los colores, los sonidos de tu tierra. El clima, la geografía, el ambiente físico que formaba parte de tu identidad.</li>
-        <li><strong>Pérdida de la lengua:</strong> Aunque mantengas el español en casa, vivir en un entorno donde tu idioma no es el dominante implica una pérdida sutil pero constante.</li>
-        <li><strong>Pérdida de una versión de ti mismo:</strong> La persona que eras allá, con todas sus conexiones y contextos, ya no existe de la misma manera.</li>
+      
+      <ul>
+        <li><strong>Procesar el duelo:</strong> Dar espacio a las emociones de tristeza, nostalgia, rabia, culpa</li>
+        <li><strong>Explorar la identidad:</strong> Integrar las diferentes partes de quién eres</li>
+        <li><strong>Manejar el estrés:</strong> Desarrollar estrategias para la adaptación</li>
+        <li><strong>Fortalecer recursos:</strong> Identificar y ampliar tus redes de apoyo</li>
+        <li><strong>Encontrar equilibrio:</strong> Entre adaptarte al nuevo entorno y mantener tus raíces</li>
       </ul>
 
-      <h2 className="text-2xl font-medium text-foreground mt-10 mb-4">
-        Comprender el contexto suizo
+      <h2 className="text-2xl font-semibold mt-10 mb-4">
+        Comprendo tu experiencia
       </h2>
-
-      <p className="text-foreground leading-relaxed mb-6">
-        Conocer de cerca el contexto cultural suizo me permite ofrecer una atención que no solo escucha tus síntomas, sino que comprende el entorno en el que se desarrollan. Entiendo las particularidades de vivir en un país con múltiples idiomas oficiales, con cantones que tienen culturas muy diferentes entre sí, con una economía próspera pero exigente, y con una sociedad que puede parecer distante al principio.
-      </p>
-
-      <p className="text-foreground leading-relaxed mb-6">
-        También comprendo la experiencia de ser latinoamericano o español en Europa: las expectativas, los estereotipos, las formas en que tu identidad es percibida por otros. Esta comprensión contextual es fundamental para un acompañamiento terapéutico efectivo.
-      </p>
-
-      <h2 className="text-2xl font-medium text-foreground mt-10 mb-4">
-        Un enfoque terapéutico para la adaptación cultural
-      </h2>
-
-      <p className="text-foreground leading-relaxed mb-6">
-        En terapia, trabajamos la adaptación cultural desde múltiples ángulos:
-      </p>
-
-      <ul className="list-disc pl-6 mb-6 space-y-2 text-foreground">
-        <li>Procesar las emociones asociadas al duelo migratorio: tristeza, nostalgia, rabia, culpa.</li>
-        <li>Explorar los cambios en la identidad y encontrar formas de integrar las diferentes partes de quién eres.</li>
-        <li>Desarrollar estrategias para manejar el estrés de la adaptación.</li>
-        <li>Trabajar con las creencias y expectativas que pueden estar dificultando el proceso.</li>
-        <li>Fortalecer los recursos personales y las redes de apoyo disponibles.</li>
-        <li>Encontrar un equilibrio entre adaptarse al nuevo entorno y mantener las raíces culturales.</li>
-      </ul>
-
-      <p className="text-foreground leading-relaxed mb-6">
-        No se trata de "superar" el duelo migratorio como si fuera un obstáculo a eliminar. Se trata de aprender a convivir con él, de integrarlo en tu historia, de encontrar maneras de vivir plenamente en el nuevo contexto sin renunciar a lo que te hace quien eres.
-      </p>
-
-      <h2 className="text-2xl font-medium text-foreground mt-10 mb-4">
-        Un espacio para ti
-      </h2>
-
-      <p className="text-foreground leading-relaxed mb-6">
-        Si estás atravesando dificultades relacionadas con la adaptación a la vida en Suiza, o si sientes que el duelo migratorio está afectando tu bienestar, te invito a considerar la posibilidad de un acompañamiento terapéutico. Ofrezco psicoterapia privada online, accesible desde cualquier lugar de Suiza, con flexibilidad horaria y en español.
-      </p>
-
-      <p className="text-foreground leading-relaxed mb-6">
-        Las sesiones no están cubiertas por el seguro de salud suizo, ya que mi formación fue obtenida en México y España. Sin embargo, las tarifas son más accesibles que las de la psicoterapia presencial en el país, y la modalidad online ofrece comodidad y continuidad.
-      </p>
-
-      <p className="text-foreground leading-relaxed mb-6">
-        Agendar una primera sesión es el primer paso para explorar cómo la terapia podría ayudarte en este momento de tu vida.
+      
+      <p>
+        Conozco de cerca el contexto cultural suizo y comprendo las particularidades de la experiencia migratoria latinoamericana y española. No tendrás que explicar constantemente de dónde vienes o por qué ves las cosas de cierta manera. Este conocimiento me permite ofrecerte un acompañamiento más preciso y relevante.
       </p>
     </SEOPageLayout>
   );
