@@ -40,12 +40,24 @@ const PsicologaEnGinebra = () => {
       </h2>
       
       <p>
-        Ginebra es una ciudad única: sede de organizaciones internacionales, hogar de diplomáticos y profesionales de todo el mundo. Esta riqueza cosmopolita también conlleva desafíos particulares: la transitoriedad de las amistades, la presión del entorno laboral internacional, y el alto costo de vida.
+        Ginebra es una ciudad única en el mundo: sede de las Naciones Unidas, la Cruz Roja Internacional, la Organización Mundial de la Salud, y decenas de organizaciones internacionales más. Esta concentración de instituciones globales hace de Ginebra un imán para diplomáticos, funcionarios internacionales, y profesionales de alto nivel de todo el mundo. La riqueza cosmopolita de la ciudad es extraordinaria, pero también conlleva desafíos particulares que muchas veces permanecen invisibles.
+      </p>
+
+      <p className="mt-4">
+        Para los hispanohablantes que viven en Ginebra, la experiencia puede ser paradójica. Por un lado, están rodeados de diversidad cultural y oportunidades profesionales excepcionales. Por otro, la transitoriedad de las amistades –donde la gente viene y va cada pocos años–, la presión del entorno laboral internacional, y el alto costo de vida pueden generar un desgaste emocional significativo. Muchas personas me cuentan que, a pesar de vivir en una de las ciudades más privilegiadas del mundo, se sienten solas, agotadas, o desconectadas.
+      </p>
+
+      <p className="mt-4">
+        La comunidad hispanohablante en Ginebra es diversa y vibrante, con personas de México, España, Colombia, Argentina, Chile, Venezuela, Perú, y muchos otros países trabajando en organismos internacionales, bancos privados, el sector del lujo, y multinacionales. Sin embargo, encontrar atención psicológica en español localmente es difícil: los pocos profesionales que hay tienen listas de espera largas y tarifas muy elevadas, típicas del mercado ginebrino.
       </p>
 
       <h2 className="text-2xl font-semibold mt-10 mb-4">
-        Temas frecuentes en Ginebra
+        Temas frecuentes entre hispanohablantes en Ginebra
       </h2>
+
+      <p>
+        A lo largo de mi práctica he trabajado con numerosas personas que viven en Ginebra, y ciertos temas aparecen con frecuencia. El estrés y el burnout en organismos internacionales es quizás el más común: la presión por cumplir mandatos, las estructuras burocráticas, las dinámicas políticas internas, y la sensación de que el trabajo nunca termina. Muchos funcionarios internacionales trabajan en condiciones de alta presión durante años hasta que el cuerpo o la mente dicen basta.
+      </p>
 
       <div className="grid md:grid-cols-2 gap-4 my-8 not-prose">
         <div className="flex items-start gap-3 p-4 bg-muted rounded-lg">
@@ -66,16 +78,29 @@ const PsicologaEnGinebra = () => {
         </div>
       </div>
 
+      <p>
+        La soledad y las amistades transitorias son otro tema recurrente. En Ginebra, las personas van y vienen: contratos que terminan, misiones que cambian, parejas que deciden regresar a su país. Construir amistades profundas cuando sabes que la otra persona probablemente se irá en dos o tres años es emocionalmente agotador. Muchos me cuentan que después de varias despedidas dolorosas, se vuelven reacios a invertir emocionalmente en nuevas amistades.
+      </p>
+
+      <p className="mt-4">
+        La ansiedad relacionada con contratos y permisos de residencia es también frecuente. Los contratos temporales, las renovaciones inciertas, y la dependencia del empleador para mantener el estatus migratorio generan una inseguridad constante que puede manifestarse como ansiedad, insomnio, o irritabilidad. Y para las parejas interculturales, los desafíos son únicos: negociar diferentes expectativas sobre roles, familia, crianza de hijos, y planes de futuro cuando vienen de culturas muy distintas.
+      </p>
+
       <h2 className="text-2xl font-semibold mt-10 mb-4">
-        Ventajas de la terapia online en Ginebra
+        Ventajas de la terapia online para quienes viven en Ginebra
       </h2>
       
+      <p>
+        La terapia online ofrece ventajas particulares para quienes viven en Ginebra. En una ciudad donde el tiempo es un recurso escaso y las agendas están saturadas, evitar el desplazamiento a una consulta presencial puede significar la diferencia entre poder asistir a terapia o no. Puedes conectarte desde tu oficina durante la pausa del almuerzo, desde tu casa al terminar la jornada, o incluso desde un hotel cuando estás de viaje por trabajo.
+      </p>
+
       <ul>
-        <li><strong>Flexibilidad horaria:</strong> Sesiones adaptadas a agendas exigentes</li>
-        <li><strong>Sin desplazamientos:</strong> Evitas perder tiempo en el tráfico o transporte</li>
-        <li><strong>Continuidad en viajes:</strong> Mantienes tu proceso aunque viajes por trabajo</li>
-        <li><strong>Atención en español:</strong> Sin depender de la limitada oferta local</li>
-        <li><strong>Tarifas accesibles:</strong> Más económico que la terapia presencial en Ginebra</li>
+        <li><strong>Flexibilidad horaria:</strong> Sesiones adaptadas a agendas exigentes de organismos internacionales y multinacionales, incluyendo horarios fuera del típico 9-5</li>
+        <li><strong>Sin desplazamientos:</strong> Evitas perder tiempo en el tráfico o transporte público, tiempo que en Ginebra es especialmente valioso</li>
+        <li><strong>Continuidad en viajes:</strong> Mantienes tu proceso terapéutico aunque viajes por misión, conferencia, o vacaciones</li>
+        <li><strong>Atención en español:</strong> Sin depender de la limitada y costosa oferta local de psicólogos hispanohablantes</li>
+        <li><strong>Tarifas accesibles:</strong> Significativamente más económico que la terapia presencial en Ginebra, donde los precios son de los más altos de Suiza</li>
+        <li><strong>Privacidad total:</strong> Nadie en tu entorno laboral o social tiene que saber que estás en terapia</li>
       </ul>
 
       <h2 className="text-2xl font-semibold mt-10 mb-4">
@@ -83,7 +108,11 @@ const PsicologaEnGinebra = () => {
       </h2>
       
       <p>
-        No tendrás que explicarme qué significa vivir en un entorno internacional, enfrentar la burocracia suiza, o navegar las diferencias culturales. Este conocimiento contextual me permite ofrecerte un acompañamiento más preciso y relevante.
+        Una de las ventajas de trabajar conmigo es que no tendrás que explicarme desde cero qué significa vivir en un entorno internacional, enfrentar la burocracia suiza, o navegar las diferencias culturales entre tu país de origen y la cultura suiza francófona. Conozco las particularidades de la vida expatriada, las dinámicas de las organizaciones internacionales, y los desafíos específicos que enfrentan las familias latinoamericanas y españolas en Europa.
+      </p>
+
+      <p className="mt-4">
+        Este conocimiento contextual me permite ofrecerte un acompañamiento más preciso y relevante. No perdemos tiempo en explicaciones básicas sobre tu realidad; podemos ir directamente a lo que importa: comprender tu malestar y trabajar juntas para generar el cambio que necesitas. Si vives en Ginebra y buscas atención psicológica en español con alguien que entiende tu mundo, estoy aquí para ayudarte.
       </p>
     </SEOPageLayout>
   );
