@@ -40,25 +40,37 @@ const AnsiedadSuiza = () => {
       </h2>
       
       <p>
-        El ritmo de vida exigente, la presión por rendir en el trabajo, la adaptación a una cultura diferente y la distancia de los seres queridos pueden convertirse en fuentes constantes de tensión. Suiza, a pesar de su alta calidad de vida, presenta desafíos particulares que pueden intensificar la ansiedad.
+        La ansiedad es una de las condiciones de salud mental más prevalentes en el mundo, y Suiza no es la excepción. Sin embargo, para las personas hispanohablantes que viven en este país, la experiencia de la ansiedad tiene matices particulares que muchas veces no son comprendidos por profesionales locales. El ritmo de vida exigente, la presión constante por rendir en el trabajo, la necesidad de adaptarse a una cultura diferente, y la distancia física y emocional de los seres queridos pueden convertirse en fuentes de tensión que alimentan y mantienen la ansiedad.
+      </p>
+
+      <p className="mt-4">
+        Suiza, a pesar de su altísima calidad de vida, sus paisajes hermosos y su seguridad, presenta desafíos particulares que pueden intensificar los síntomas ansiosos. La cultura suiza valora la puntualidad, la precisión y el orden de una manera que puede resultar abrumadora para quienes vienen de culturas más flexibles. La presión social por mantener las apariencias, por no mostrar debilidad, y por demostrar que la decisión de emigrar "valió la pena" puede hacer que la ansiedad se viva en silencio, sin buscar ayuda.
+      </p>
+
+      <p className="mt-4">
+        Para muchos hispanohablantes en Suiza, la ansiedad se manifiesta como una preocupación constante sobre el futuro: ¿Renovarán mi contrato? ¿Podré mantener este nivel de vida? ¿Estoy haciendo lo suficiente para que mis hijos se adapten? ¿Y si algo le pasa a mi familia en Latinoamérica y no puedo estar ahí? Estas preocupaciones, aunque comprensibles, pueden volverse paralizantes cuando la mente no puede descansar.
       </p>
 
       <h2 className="text-2xl font-semibold mt-10 mb-4">
-        ¿Reconoces estos síntomas?
+        ¿Reconoces estos síntomas de ansiedad?
       </h2>
+
+      <p>
+        La ansiedad se manifiesta de formas diversas, y no siempre es evidente que lo que estás experimentando tiene un nombre y un tratamiento efectivo. Algunas personas experimentan principalmente síntomas físicos: tensión muscular, especialmente en cuello y espalda; problemas digestivos; palpitaciones; o dificultad para respirar profundamente. Otras personas viven la ansiedad más en la mente: pensamientos acelerados, preocupaciones que no paran, dificultad para concentrarse, o la sensación de que algo malo está por pasar aunque no haya evidencia real.
+      </p>
 
       <div className="grid md:grid-cols-2 gap-4 my-8 not-prose">
         <div className="flex items-start gap-3 p-4 bg-muted rounded-lg">
           <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-          <span className="text-foreground">Preocupación constante y pensamientos catastróficos</span>
+          <span className="text-foreground">Preocupación constante y pensamientos catastróficos que no puedes detener</span>
         </div>
         <div className="flex items-start gap-3 p-4 bg-muted rounded-lg">
           <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-          <span className="text-foreground">Tensión muscular y problemas de sueño</span>
+          <span className="text-foreground">Tensión muscular persistente y problemas de sueño</span>
         </div>
         <div className="flex items-start gap-3 p-4 bg-muted rounded-lg">
           <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-          <span className="text-foreground">Dificultad para relajarte y desconectar</span>
+          <span className="text-foreground">Dificultad para relajarte incluso cuando tienes tiempo libre</span>
         </div>
         <div className="flex items-start gap-3 p-4 bg-muted rounded-lg">
           <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
@@ -66,28 +78,52 @@ const AnsiedadSuiza = () => {
         </div>
       </div>
 
+      <p>
+        Un patrón muy común en la ansiedad es la evitación. Cuando ciertas situaciones generan ansiedad intensa, es natural querer evitarlas: evitar hablar en público, evitar conflictos, evitar viajar sola, evitar llamar al médico, evitar revisar las finanzas. El problema es que cada vez que evitas algo, la ansiedad se fortalece. El mensaje que le das a tu cerebro es "esa situación es peligrosa y no puedo manejarla", lo que hace que la próxima vez la ansiedad sea aún mayor.
+      </p>
+
       <h2 className="text-2xl font-semibold mt-10 mb-4">
-        Tratamiento basado en la evidencia
+        Tratamiento de la ansiedad basado en la evidencia científica
       </h2>
       
       <p>
-        Trabajo principalmente desde la Terapia Cognitivo-Conductual (TCC), el enfoque con mayor respaldo científico para el tratamiento de la ansiedad. El tratamiento incluye:
+        Trabajo principalmente desde la Terapia Cognitivo-Conductual (TCC), que es el enfoque con mayor respaldo científico para el tratamiento de los trastornos de ansiedad. La TCC ha sido sometida a cientos de estudios clínicos que demuestran su eficacia, y es el tratamiento de primera línea recomendado por las principales guías clínicas internacionales para condiciones como el trastorno de ansiedad generalizada, el trastorno de pánico, las fobias específicas, y la ansiedad social.
+      </p>
+
+      <p className="mt-4">
+        El tratamiento de la ansiedad con TCC sigue un proceso estructurado pero personalizado. Comenzamos con una evaluación detallada para comprender cómo se manifiesta tu ansiedad, qué situaciones la disparan, qué pensamientos la alimentan, y qué comportamientos la mantienen. A partir de esta comprensión, diseñamos un plan de tratamiento con objetivos claros y técnicas específicas.
       </p>
       
       <ul>
-        <li><strong>Psicoeducación:</strong> Entender cómo funciona la ansiedad y por qué se mantiene</li>
-        <li><strong>Reestructuración cognitiva:</strong> Identificar y modificar pensamientos ansiosos</li>
-        <li><strong>Exposición gradual:</strong> Enfrentar progresivamente las situaciones temidas</li>
-        <li><strong>Técnicas de regulación:</strong> Relajación, respiración y mindfulness</li>
-        <li><strong>Prevención de recaídas:</strong> Consolidar lo aprendido para el largo plazo</li>
+        <li><strong>Psicoeducación:</strong> El primer paso es entender cómo funciona la ansiedad, por qué apareció, y por qué se mantiene. Este conocimiento te da poder sobre tu experiencia y reduce el miedo a los síntomas</li>
+        <li><strong>Reestructuración cognitiva:</strong> Aprendes a identificar los pensamientos ansiosos automáticos, a cuestionar su validez, y a desarrollar perspectivas más realistas y funcionales</li>
+        <li><strong>Exposición gradual:</strong> Enfrentas progresivamente las situaciones que has estado evitando, en un ritmo que puedas manejar, para recuperar terreno y reducir el miedo</li>
+        <li><strong>Técnicas de regulación:</strong> Desarrollas herramientas concretas para manejar la activación ansiosa: técnicas de relajación, respiración diafragmática, y mindfulness</li>
+        <li><strong>Prevención de recaídas:</strong> Consolidamos lo aprendido y desarrollamos un plan para mantener los logros a largo plazo y manejar posibles retrocesos</li>
       </ul>
 
       <h2 className="text-2xl font-semibold mt-10 mb-4">
-        Da el primer paso
+        La terapia online es efectiva para tratar la ansiedad
+      </h2>
+
+      <p>
+        Si te preguntas si la terapia online puede ser tan efectiva como la presencial para tratar la ansiedad, la respuesta es sí. Múltiples estudios de investigación han demostrado que la TCC online produce resultados equivalentes a la TCC presencial para trastornos de ansiedad. De hecho, para muchas personas, la posibilidad de conectarse desde casa puede reducir la barrera inicial de buscar ayuda: no tienes que salir, no tienes que encontrarte con nadie en una sala de espera, y puedes estar en un ambiente donde te sientes segura.
+      </p>
+
+      <p className="mt-4">
+        Además, la terapia online elimina obstáculos logísticos que pueden interferir con la regularidad del tratamiento. No tienes que pedir permiso en el trabajo para desplazarte, no tienes que coordinar transporte, y si tienes un día especialmente ansioso, no tienes que enfrentar el mundo exterior para llegar a tu sesión. Esto se traduce en mayor adherencia al tratamiento y, por tanto, mejores resultados.
+      </p>
+
+      <h2 className="text-2xl font-semibold mt-10 mb-4">
+        Da el primer paso hacia una vida con menos ansiedad
       </h2>
       
       <p>
-        Si la ansiedad está afectando tu calidad de vida, buscar ayuda profesional es un paso valiente. La ansiedad es tratable, y con el apoyo adecuado puedes recuperar la sensación de control sobre tu vida.
+        Si la ansiedad está afectando tu calidad de vida, tu trabajo, tus relaciones o tu capacidad de disfrutar, buscar ayuda profesional es un paso valiente e importante. La ansiedad es una de las condiciones más tratables en salud mental, y con el apoyo adecuado puedes recuperar la sensación de control sobre tu vida, reducir los síntomas que te limitan, y desarrollar herramientas que te servirán para siempre.
+      </p>
+
+      <p className="mt-4">
+        No tienes que seguir viviendo en un estado de alerta constante. No tienes que resignarte a las preocupaciones interminables o a evitar las cosas que te dan miedo. El cambio es posible, y estoy aquí para acompañarte en ese proceso. Agenda una primera sesión y comencemos a trabajar juntas.
       </p>
     </SEOPageLayout>
   );

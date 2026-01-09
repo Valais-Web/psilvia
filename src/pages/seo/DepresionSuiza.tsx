@@ -40,53 +40,102 @@ const DepresionSuiza = () => {
       </h2>
       
       <p>
-        La depresión es una realidad silenciosa que afecta a muchas personas en Suiza, especialmente entre quienes se encuentran lejos de su país de origen. El aislamiento, las dificultades de adaptación y la distancia de la familia pueden convertirse en un peso emocional que, con el tiempo, se transforma en algo más profundo.
+        La depresión es una realidad silenciosa que afecta a muchas personas en Suiza, especialmente entre quienes se encuentran lejos de su país de origen. Mientras que desde fuera la vida en Suiza puede parecer perfecta –seguridad, belleza natural, buenos salarios–, la experiencia interna puede ser muy diferente. El aislamiento emocional, las dificultades de adaptación a una cultura distante, y la distancia física de la familia y amigos pueden convertirse en un peso que, con el tiempo, se transforma en algo más profundo que la simple nostalgia.
+      </p>
+
+      <p className="mt-4">
+        Para los hispanohablantes que viven en Suiza, la depresión tiene características particulares. La barrera del idioma puede hacer que sea difícil expresar lo que realmente sientes, incluso cuando dominas el alemán, francés o inglés para el trabajo. Las emociones más profundas, los matices del malestar, la forma en que experimentas el mundo: todo esto fluye mejor en tu lengua materna. Y cuando no puedes expresarte plenamente, el aislamiento emocional se profundiza.
+      </p>
+
+      <p className="mt-4">
+        Además, existe una presión implícita por demostrar que la decisión de emigrar "valió la pena". Admitir que estás deprimido puede sentirse como un fracaso, como si estuvieras siendo desagradecido con las oportunidades que tienes. Esta presión hace que muchas personas vivan la depresión en silencio, sin buscar ayuda, lo que solo empeora la situación.
       </p>
 
       <h2 className="text-2xl font-semibold mt-10 mb-4">
-        Señales de alerta
+        El duelo migratorio: pérdidas que no se ven
       </h2>
+
+      <p>
+        Uno de los factores que más contribuye a la depresión en personas migrantes es lo que llamamos duelo migratorio. A diferencia de otros duelos, las pérdidas de la migración son invisibles para quienes te rodean: no hubo un funeral, no hay una fecha en el calendario, nadie te envía flores o te da el pésame. Pero las pérdidas son muy reales: dejaste atrás a tu familia, tus amigos de toda la vida, tu estatus y lugar en la comunidad, tu lengua, tus referencias culturales, los olores y sabores de tu tierra.
+      </p>
+
+      <p className="mt-4">
+        El duelo migratorio es además un duelo "parcial" y "recurrente": las personas y lugares que dejaste siguen existiendo, lo que genera una ambivalencia constante. Cada vez que alguien se enferma, celebra un cumpleaños, o atraviesa una crisis en tu país, el duelo se reactiva. Esta montaña rusa emocional puede ser agotadora y, con el tiempo, contribuir al desarrollo de un episodio depresivo.
+      </p>
+
+      <h2 className="text-2xl font-semibold mt-10 mb-4">
+        Señales de alerta de la depresión
+      </h2>
+
+      <p>
+        La depresión no siempre se manifiesta como tristeza evidente. De hecho, muchas personas con depresión no se identifican como "tristes", sino que experimentan vacío emocional, incapacidad de sentir alegría o interés, o irritabilidad persistente. Reconocer las señales de alerta es el primer paso para buscar ayuda.
+      </p>
 
       <div className="grid md:grid-cols-2 gap-4 my-8 not-prose">
         <div className="flex items-start gap-3 p-4 bg-muted rounded-lg">
           <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-          <span className="text-foreground">Tristeza persistente o vacío emocional</span>
+          <span className="text-foreground">Tristeza persistente o sensación de vacío emocional que no se va</span>
         </div>
         <div className="flex items-start gap-3 p-4 bg-muted rounded-lg">
           <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-          <span className="text-foreground">Pérdida de interés en actividades que disfrutabas</span>
+          <span className="text-foreground">Pérdida de interés en actividades que antes disfrutabas</span>
         </div>
         <div className="flex items-start gap-3 p-4 bg-muted rounded-lg">
           <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-          <span className="text-foreground">Fatiga constante y falta de energía</span>
+          <span className="text-foreground">Fatiga constante y falta de energía incluso para tareas simples</span>
         </div>
         <div className="flex items-start gap-3 p-4 bg-muted rounded-lg">
           <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-          <span className="text-foreground">Dificultad para concentrarte o tomar decisiones</span>
+          <span className="text-foreground">Dificultad para concentrarte, recordar cosas o tomar decisiones</span>
         </div>
       </div>
 
+      <p>
+        Otros síntomas comunes incluyen cambios en el sueño (dormir demasiado o muy poco), cambios en el apetito y peso, sentimientos de culpa o inutilidad desproporcionados, y en casos más severos, pensamientos de muerte o suicidio. Si experimentas varios de estos síntomas durante más de dos semanas, es importante buscar ayuda profesional.
+      </p>
+
       <h2 className="text-2xl font-semibold mt-10 mb-4">
-        Tratamiento estructurado y gradual
+        Tratamiento estructurado y gradual para la depresión
       </h2>
       
       <p>
-        Mi enfoque se basa en la Terapia Cognitivo-Conductual, con alta eficacia para la depresión:
+        Mi enfoque para tratar la depresión se basa en la Terapia Cognitivo-Conductual (TCC), que cuenta con amplia evidencia científica de su eficacia para esta condición. La TCC para la depresión se centra en dos áreas principales: los patrones de pensamiento negativos que mantienen el estado depresivo, y los patrones de comportamiento que perpetúan el ciclo de la depresión.
+      </p>
+
+      <p className="mt-4">
+        El tratamiento es gradual y respetuoso de tu ritmo. Cuando alguien está deprimido, la energía y la motivación son recursos escasos, por lo que no tiene sentido proponer cambios drásticos desde el principio. Comenzamos con pequeños pasos: quizás levantarte a cierta hora, quizás dar un paseo corto, quizás retomar el contacto con una persona específica. Cada pequeño logro reconstruye la sensación de capacidad y genera momentum para el siguiente paso.
       </p>
       
       <ul>
-        <li><strong>Activación conductual:</strong> Recuperar gradualmente actividades que generan logro o placer</li>
-        <li><strong>Trabajo cognitivo:</strong> Identificar y cuestionar pensamientos negativos automáticos</li>
-        <li><strong>Regulación emocional:</strong> Desarrollar estrategias para manejar emociones difíciles</li>
-        <li><strong>Reconexión con valores:</strong> Orientar la vida hacia lo que es importante para ti</li>
+        <li><strong>Activación conductual:</strong> Recuperar gradualmente actividades que generan sensación de logro o placer, empezando por las más pequeñas y manejables</li>
+        <li><strong>Trabajo cognitivo:</strong> Identificar y cuestionar los pensamientos negativos automáticos que filtran tu experiencia y mantienen el ánimo bajo</li>
+        <li><strong>Regulación emocional:</strong> Desarrollar estrategias para tolerar y manejar las emociones difíciles sin ser arrastrado por ellas</li>
+        <li><strong>Reconexión con valores:</strong> Clarificar qué es realmente importante para ti y orientar tu vida hacia esos valores, lo que da sentido y dirección</li>
+        <li><strong>Prevención de recaídas:</strong> Identificar señales de alerta temprana y desarrollar un plan para prevenir futuros episodios</li>
       </ul>
+
+      <h2 className="text-2xl font-semibold mt-10 mb-4">
+        La terapia online: acceso cuando más cuesta salir
+      </h2>
+
+      <p>
+        Uno de los síntomas más incapacitantes de la depresión es la dificultad para hacer cosas que normalmente serían simples: levantarse, ducharse, salir de casa. En este contexto, la terapia online puede ser la diferencia entre recibir tratamiento o no. No tienes que vestirte, maquillarte, o tomar el tren para llegar a una consulta. Puedes conectarte desde tu cama si es necesario. Lo importante es que te presentes, como sea que puedas.
+      </p>
+
+      <p className="mt-4">
+        La investigación ha demostrado que la TCC online es igual de efectiva que la presencial para el tratamiento de la depresión. Además, para quienes están lejos de su país y buscan atención en español, la modalidad online abre posibilidades que de otra manera no existirían. No estás limitado a los pocos psicólogos hispanohablantes de tu cantón; puedes acceder a atención especializada sin importar dónde vivas en Suiza.
+      </p>
 
       <h2 className="text-2xl font-semibold mt-10 mb-4">
         Pedir ayuda es valiente
       </h2>
       
       <p>
-        Reconocer que estás pasando por un momento difícil y buscar apoyo profesional es el primer paso hacia la recuperación. La depresión no es debilidad ni falta de voluntad: es una condición que responde bien al tratamiento adecuado.
+        Reconocer que estás pasando por un momento difícil y buscar apoyo profesional no es una señal de debilidad: es un acto de valentía y de amor propio. La depresión no es un defecto de carácter ni falta de fuerza de voluntad; es una condición que tiene causas identificables y que responde bien al tratamiento adecuado. No tienes que vivir así, y no tienes que hacerlo sola.
+      </p>
+
+      <p className="mt-4">
+        Si te identificas con lo que has leído aquí, te invito a dar el primer paso. Agenda una primera sesión donde podamos conversar sobre lo que estás viviendo, evaluar tu situación, y diseñar juntas un plan para que puedas recuperar tu bienestar. El camino de salida de la depresión es posible, y estoy aquí para acompañarte en él.
       </p>
     </SEOPageLayout>
   );
