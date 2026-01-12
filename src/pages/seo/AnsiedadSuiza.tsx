@@ -13,7 +13,7 @@ const AnsiedadSuiza = () => {
     },
     {
       question: "¿La terapia online funciona para tratar la ansiedad?",
-      answer: "Sí, la terapia cognitivo-conductual online ha demostrado la misma eficacia que la presencial para el tratamiento de trastornos de ansiedad. La comodidad de conectarte desde casa puede incluso reducir la ansiedad inicial de acudir a consulta."
+      answer: "Sí, la terapia cognitivo-conductual online ha demostrado la misma eficacia que la presencial para el tratamiento de trastornos de ansiedad. La comodidad de conectarte desde casa puede incluso reducir la ansiedad inicial de acudir a consulta. Múltiples estudios de investigación han demostrado que la TCC online produce resultados equivalentes a la TCC presencial para trastornos de ansiedad. De hecho, para muchas personas, la posibilidad de conectarse desde casa puede reducir la barrera inicial de buscar ayuda: no tienes que salir, no tienes que encontrarte con nadie en una sala de espera, y puedes estar en un ambiente donde te sientes segura."
     },
     {
       question: "¿Qué técnicas utilizas para tratar la ansiedad?",
@@ -22,6 +22,22 @@ const AnsiedadSuiza = () => {
     {
       question: "¿Necesito medicación además de terapia?",
       answer: "No necesariamente. Muchas personas mejoran solo con psicoterapia. Si durante la evaluación considero que podrías beneficiarte de una consulta psiquiátrica, te lo indicaré para que lo valores con un profesional médico."
+    },
+    {
+      question: "¿Cómo se manifiesta la ansiedad en hispanohablantes en Suiza?",
+      answer: "Para muchos hispanohablantes en Suiza, la ansiedad se manifiesta como una preocupación constante sobre el futuro: ¿Renovarán mi contrato? ¿Podré mantener este nivel de vida? ¿Estoy haciendo lo suficiente para que mis hijos se adapten? ¿Y si algo le pasa a mi familia en Latinoamérica y no puedo estar ahí? Estas preocupaciones, aunque comprensibles, pueden volverse paralizantes cuando la mente no puede descansar. La cultura suiza valora la puntualidad, la precisión y el orden de una manera que puede resultar abrumadora para quienes vienen de culturas más flexibles."
+    },
+    {
+      question: "¿Qué es la evitación y cómo afecta la ansiedad?",
+      answer: "Un patrón muy común en la ansiedad es la evitación. Cuando ciertas situaciones generan ansiedad intensa, es natural querer evitarlas: evitar hablar en público, evitar conflictos, evitar viajar sola, evitar llamar al médico, evitar revisar las finanzas. El problema es que cada vez que evitas algo, la ansiedad se fortalece. El mensaje que le das a tu cerebro es 'esa situación es peligrosa y no puedo manejarla', lo que hace que la próxima vez la ansiedad sea aún mayor."
+    },
+    {
+      question: "¿Cómo es el proceso de tratamiento para la ansiedad?",
+      answer: "El tratamiento de la ansiedad con TCC sigue un proceso estructurado pero personalizado. Comenzamos con una evaluación detallada para comprender cómo se manifiesta tu ansiedad, qué situaciones la disparan, qué pensamientos la alimentan, y qué comportamientos la mantienen. A partir de esta comprensión, diseñamos un plan de tratamiento con objetivos claros y técnicas específicas: psicoeducación, reestructuración cognitiva, exposición gradual, técnicas de regulación, y prevención de recaídas."
+    },
+    {
+      question: "¿Cuáles son las ventajas de la terapia online para la ansiedad?",
+      answer: "La terapia online elimina obstáculos logísticos que pueden interferir con la regularidad del tratamiento. No tienes que pedir permiso en el trabajo para desplazarte, no tienes que coordinar transporte, y si tienes un día especialmente ansioso, no tienes que enfrentar el mundo exterior para llegar a tu sesión. Esto se traduce en mayor adherencia al tratamiento y, por tanto, mejores resultados."
     }
   ];
 
@@ -41,14 +57,6 @@ const AnsiedadSuiza = () => {
       
       <p>
         La ansiedad es una de las condiciones de salud mental más prevalentes en el mundo, y Suiza no es la excepción. Sin embargo, para las personas hispanohablantes que viven en este país, la experiencia de la ansiedad tiene matices particulares que muchas veces no son comprendidos por profesionales locales. El ritmo de vida exigente, la presión constante por rendir en el trabajo, la necesidad de adaptarse a una cultura diferente, y la distancia física y emocional de los seres queridos pueden convertirse en fuentes de tensión que alimentan y mantienen la ansiedad.
-      </p>
-
-      <p className="mt-4">
-        Suiza, a pesar de su altísima calidad de vida, sus paisajes hermosos y su seguridad, presenta desafíos particulares que pueden intensificar los síntomas ansiosos. La cultura suiza valora la puntualidad, la precisión y el orden de una manera que puede resultar abrumadora para quienes vienen de culturas más flexibles. La presión social por mantener las apariencias, por no mostrar debilidad, y por demostrar que la decisión de emigrar "valió la pena" puede hacer que la ansiedad se viva en silencio, sin buscar ayuda.
-      </p>
-
-      <p className="mt-4">
-        Para muchos hispanohablantes en Suiza, la ansiedad se manifiesta como una preocupación constante sobre el futuro: ¿Renovarán mi contrato? ¿Podré mantener este nivel de vida? ¿Estoy haciendo lo suficiente para que mis hijos se adapten? ¿Y si algo le pasa a mi familia en Latinoamérica y no puedo estar ahí? Estas preocupaciones, aunque comprensibles, pueden volverse paralizantes cuando la mente no puede descansar.
       </p>
 
       <h2 className="text-2xl font-semibold mt-10 mb-4">
@@ -78,20 +86,12 @@ const AnsiedadSuiza = () => {
         </div>
       </div>
 
-      <p>
-        Un patrón muy común en la ansiedad es la evitación. Cuando ciertas situaciones generan ansiedad intensa, es natural querer evitarlas: evitar hablar en público, evitar conflictos, evitar viajar sola, evitar llamar al médico, evitar revisar las finanzas. El problema es que cada vez que evitas algo, la ansiedad se fortalece. El mensaje que le das a tu cerebro es "esa situación es peligrosa y no puedo manejarla", lo que hace que la próxima vez la ansiedad sea aún mayor.
-      </p>
-
       <h2 className="text-2xl font-semibold mt-10 mb-4">
         Tratamiento de la ansiedad basado en la evidencia científica
       </h2>
       
       <p>
         Trabajo principalmente desde la Terapia Cognitivo-Conductual (TCC), que es el enfoque con mayor respaldo científico para el tratamiento de los trastornos de ansiedad. La TCC ha sido sometida a cientos de estudios clínicos que demuestran su eficacia, y es el tratamiento de primera línea recomendado por las principales guías clínicas internacionales para condiciones como el trastorno de ansiedad generalizada, el trastorno de pánico, las fobias específicas, y la ansiedad social.
-      </p>
-
-      <p className="mt-4">
-        El tratamiento de la ansiedad con TCC sigue un proceso estructurado pero personalizado. Comenzamos con una evaluación detallada para comprender cómo se manifiesta tu ansiedad, qué situaciones la disparan, qué pensamientos la alimentan, y qué comportamientos la mantienen. A partir de esta comprensión, diseñamos un plan de tratamiento con objetivos claros y técnicas específicas.
       </p>
       
       <ul>
@@ -101,18 +101,6 @@ const AnsiedadSuiza = () => {
         <li><strong>Técnicas de regulación:</strong> Desarrollas herramientas concretas para manejar la activación ansiosa: técnicas de relajación, respiración diafragmática, y mindfulness</li>
         <li><strong>Prevención de recaídas:</strong> Consolidamos lo aprendido y desarrollamos un plan para mantener los logros a largo plazo y manejar posibles retrocesos</li>
       </ul>
-
-      <h2 className="text-2xl font-semibold mt-10 mb-4">
-        La terapia online es efectiva para tratar la ansiedad
-      </h2>
-
-      <p>
-        Si te preguntas si la terapia online puede ser tan efectiva como la presencial para tratar la ansiedad, la respuesta es sí. Múltiples estudios de investigación han demostrado que la TCC online produce resultados equivalentes a la TCC presencial para trastornos de ansiedad. De hecho, para muchas personas, la posibilidad de conectarse desde casa puede reducir la barrera inicial de buscar ayuda: no tienes que salir, no tienes que encontrarte con nadie en una sala de espera, y puedes estar en un ambiente donde te sientes segura.
-      </p>
-
-      <p className="mt-4">
-        Además, la terapia online elimina obstáculos logísticos que pueden interferir con la regularidad del tratamiento. No tienes que pedir permiso en el trabajo para desplazarte, no tienes que coordinar transporte, y si tienes un día especialmente ansioso, no tienes que enfrentar el mundo exterior para llegar a tu sesión. Esto se traduce en mayor adherencia al tratamiento y, por tanto, mejores resultados.
-      </p>
 
       <h2 className="text-2xl font-semibold mt-10 mb-4">
         Da el primer paso hacia una vida con menos ansiedad

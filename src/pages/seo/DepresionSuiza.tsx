@@ -9,7 +9,7 @@ const DepresionSuiza = () => {
     },
     {
       question: "¿El duelo migratorio puede causar depresión?",
-      answer: "Sí, el duelo migratorio implica pérdidas reales (familia, amigos, estatus, cultura) que pueden desencadenar episodios depresivos. Es importante reconocer y procesar estas pérdidas para poder avanzar."
+      answer: "Sí, el duelo migratorio implica pérdidas reales (familia, amigos, estatus, cultura) que pueden desencadenar episodios depresivos. Es importante reconocer y procesar estas pérdidas para poder avanzar. A diferencia de otros duelos, las pérdidas de la migración son invisibles para quienes te rodean: no hubo un funeral, no hay una fecha en el calendario, nadie te envía flores o te da el pésame. Pero las pérdidas son muy reales: dejaste atrás a tu familia, tus amigos de toda la vida, tu estatus y lugar en la comunidad, tu lengua, tus referencias culturales, los olores y sabores de tu tierra."
     },
     {
       question: "¿Cuánto tiempo tarda en mejorar la depresión con terapia?",
@@ -17,11 +17,27 @@ const DepresionSuiza = () => {
     },
     {
       question: "¿Puedo hacer terapia online si me cuesta salir de casa?",
-      answer: "Precisamente la terapia online es ideal si la depresión te dificulta salir. Puedes conectarte desde tu espacio seguro, lo que reduce una barrera importante para iniciar el tratamiento."
+      answer: "Precisamente la terapia online es ideal si la depresión te dificulta salir. Puedes conectarte desde tu espacio seguro, lo que reduce una barrera importante para iniciar el tratamiento. No tienes que vestirte, maquillarte, o tomar el tren para llegar a una consulta. Puedes conectarte desde tu cama si es necesario. Lo importante es que te presentes, como sea que puedas."
     },
     {
       question: "¿Necesito medicación para la depresión?",
       answer: "No siempre. Muchas depresiones leves a moderadas responden bien a la psicoterapia sola. Si durante la evaluación considero que podrías beneficiarte de medicación, te orientaré para que consultes con un psiquiatra."
+    },
+    {
+      question: "¿Qué es el duelo migratorio y cómo afecta emocionalmente?",
+      answer: "El duelo migratorio es además un duelo 'parcial' y 'recurrente': las personas y lugares que dejaste siguen existiendo, lo que genera una ambivalencia constante. Cada vez que alguien se enferma, celebra un cumpleaños, o atraviesa una crisis en tu país, el duelo se reactiva. Esta montaña rusa emocional puede ser agotadora y, con el tiempo, contribuir al desarrollo de un episodio depresivo."
+    },
+    {
+      question: "¿Cómo es el tratamiento estructurado para la depresión?",
+      answer: "Mi enfoque para tratar la depresión se basa en la Terapia Cognitivo-Conductual (TCC), que cuenta con amplia evidencia científica de su eficacia para esta condición. La TCC para la depresión se centra en dos áreas principales: los patrones de pensamiento negativos que mantienen el estado depresivo, y los patrones de comportamiento que perpetúan el ciclo de la depresión. El tratamiento es gradual y respetuoso de tu ritmo."
+    },
+    {
+      question: "¿Qué técnicas se utilizan en el tratamiento de la depresión?",
+      answer: "Utilizamos varias técnicas complementarias: Activación conductual para recuperar gradualmente actividades que generan sensación de logro o placer; Trabajo cognitivo para identificar y cuestionar los pensamientos negativos automáticos; Regulación emocional para desarrollar estrategias para tolerar y manejar las emociones difíciles; Reconexión con valores para clarificar qué es realmente importante para ti; y Prevención de recaídas para identificar señales de alerta temprana."
+    },
+    {
+      question: "¿Por qué la presión por 'demostrar que valió la pena' empeora la depresión?",
+      answer: "Existe una presión implícita por demostrar que la decisión de emigrar 'valió la pena'. Admitir que estás deprimido puede sentirse como un fracaso, como si estuvieras siendo desagradecido con las oportunidades que tienes. Esta presión hace que muchas personas vivan la depresión en silencio, sin buscar ayuda, lo que solo empeora la situación."
     }
   ];
 
@@ -45,22 +61,6 @@ const DepresionSuiza = () => {
 
       <p className="mt-4">
         Para los hispanohablantes que viven en Suiza, la depresión tiene características particulares. La barrera del idioma puede hacer que sea difícil expresar lo que realmente sientes, incluso cuando dominas el alemán, francés o inglés para el trabajo. Las emociones más profundas, los matices del malestar, la forma en que experimentas el mundo: todo esto fluye mejor en tu lengua materna. Y cuando no puedes expresarte plenamente, el aislamiento emocional se profundiza.
-      </p>
-
-      <p className="mt-4">
-        Además, existe una presión implícita por demostrar que la decisión de emigrar "valió la pena". Admitir que estás deprimido puede sentirse como un fracaso, como si estuvieras siendo desagradecido con las oportunidades que tienes. Esta presión hace que muchas personas vivan la depresión en silencio, sin buscar ayuda, lo que solo empeora la situación.
-      </p>
-
-      <h2 className="text-2xl font-semibold mt-10 mb-4">
-        El duelo migratorio: pérdidas que no se ven
-      </h2>
-
-      <p>
-        Uno de los factores que más contribuye a la depresión en personas migrantes es lo que llamamos duelo migratorio. A diferencia de otros duelos, las pérdidas de la migración son invisibles para quienes te rodean: no hubo un funeral, no hay una fecha en el calendario, nadie te envía flores o te da el pésame. Pero las pérdidas son muy reales: dejaste atrás a tu familia, tus amigos de toda la vida, tu estatus y lugar en la comunidad, tu lengua, tus referencias culturales, los olores y sabores de tu tierra.
-      </p>
-
-      <p className="mt-4">
-        El duelo migratorio es además un duelo "parcial" y "recurrente": las personas y lugares que dejaste siguen existiendo, lo que genera una ambivalencia constante. Cada vez que alguien se enferma, celebra un cumpleaños, o atraviesa una crisis en tu país, el duelo se reactiva. Esta montaña rusa emocional puede ser agotadora y, con el tiempo, contribuir al desarrollo de un episodio depresivo.
       </p>
 
       <h2 className="text-2xl font-semibold mt-10 mb-4">
@@ -92,38 +92,6 @@ const DepresionSuiza = () => {
 
       <p>
         Otros síntomas comunes incluyen cambios en el sueño (dormir demasiado o muy poco), cambios en el apetito y peso, sentimientos de culpa o inutilidad desproporcionados, y en casos más severos, pensamientos de muerte o suicidio. Si experimentas varios de estos síntomas durante más de dos semanas, es importante buscar ayuda profesional.
-      </p>
-
-      <h2 className="text-2xl font-semibold mt-10 mb-4">
-        Tratamiento estructurado y gradual para la depresión
-      </h2>
-      
-      <p>
-        Mi enfoque para tratar la depresión se basa en la Terapia Cognitivo-Conductual (TCC), que cuenta con amplia evidencia científica de su eficacia para esta condición. La TCC para la depresión se centra en dos áreas principales: los patrones de pensamiento negativos que mantienen el estado depresivo, y los patrones de comportamiento que perpetúan el ciclo de la depresión.
-      </p>
-
-      <p className="mt-4">
-        El tratamiento es gradual y respetuoso de tu ritmo. Cuando alguien está deprimido, la energía y la motivación son recursos escasos, por lo que no tiene sentido proponer cambios drásticos desde el principio. Comenzamos con pequeños pasos: quizás levantarte a cierta hora, quizás dar un paseo corto, quizás retomar el contacto con una persona específica. Cada pequeño logro reconstruye la sensación de capacidad y genera momentum para el siguiente paso.
-      </p>
-      
-      <ul>
-        <li><strong>Activación conductual:</strong> Recuperar gradualmente actividades que generan sensación de logro o placer, empezando por las más pequeñas y manejables</li>
-        <li><strong>Trabajo cognitivo:</strong> Identificar y cuestionar los pensamientos negativos automáticos que filtran tu experiencia y mantienen el ánimo bajo</li>
-        <li><strong>Regulación emocional:</strong> Desarrollar estrategias para tolerar y manejar las emociones difíciles sin ser arrastrado por ellas</li>
-        <li><strong>Reconexión con valores:</strong> Clarificar qué es realmente importante para ti y orientar tu vida hacia esos valores, lo que da sentido y dirección</li>
-        <li><strong>Prevención de recaídas:</strong> Identificar señales de alerta temprana y desarrollar un plan para prevenir futuros episodios</li>
-      </ul>
-
-      <h2 className="text-2xl font-semibold mt-10 mb-4">
-        La terapia online: acceso cuando más cuesta salir
-      </h2>
-
-      <p>
-        Uno de los síntomas más incapacitantes de la depresión es la dificultad para hacer cosas que normalmente serían simples: levantarse, ducharse, salir de casa. En este contexto, la terapia online puede ser la diferencia entre recibir tratamiento o no. No tienes que vestirte, maquillarte, o tomar el tren para llegar a una consulta. Puedes conectarte desde tu cama si es necesario. Lo importante es que te presentes, como sea que puedas.
-      </p>
-
-      <p className="mt-4">
-        La investigación ha demostrado que la TCC online es igual de efectiva que la presencial para el tratamiento de la depresión. Además, para quienes están lejos de su país y buscan atención en español, la modalidad online abre posibilidades que de otra manera no existirían. No estás limitado a los pocos psicólogos hispanohablantes de tu cantón; puedes acceder a atención especializada sin importar dónde vivas en Suiza.
       </p>
 
       <h2 className="text-2xl font-semibold mt-10 mb-4">

@@ -5,7 +5,7 @@ const PsicologaEnEspanolSuiza = () => {
   const faqs = [
     {
       question: "¿Por qué es importante hacer terapia en español?",
-      answer: "Las emociones más profundas, los recuerdos de la infancia, los matices de lo que sientes: todo fluye más naturalmente en tu lengua materna. No tener que traducir mientras exploras tu mundo interno permite una conexión más auténtica con el proceso terapéutico."
+      answer: "Las emociones más profundas, los recuerdos de la infancia, los matices de lo que sientes: todo fluye más naturalmente en tu lengua materna. No tener que traducir mientras exploras tu mundo interno permite una conexión más auténtica con el proceso terapéutico. El idioma no es simplemente un vehículo neutral para transmitir información: es el recipiente de nuestra historia emocional, el archivo donde guardamos los recuerdos más profundos, el sistema de códigos con el que aprendimos a nombrar el mundo."
     },
     {
       question: "¿Atiendes a personas de cualquier país hispanohablante?",
@@ -17,11 +17,27 @@ const PsicologaEnEspanolSuiza = () => {
     },
     {
       question: "¿Entiendes las dinámicas familiares latinas?",
-      answer: "Sí, comprendo las particularidades de las familias latinoamericanas y españolas: las expectativas, la importancia de la comunidad y la familia extendida, y los desafíos de ser migrante en Europa."
+      answer: "Sí, comprendo las particularidades de las familias latinoamericanas y españolas: las expectativas, la importancia de la comunidad y la familia extendida, los roles de género tradicionales y cómo negociarlos, la forma en que se expresa (o se calla) el afecto, y los mandatos implícitos sobre el éxito, el matrimonio, los hijos, y lo que significa 'ser una buena hija/esposa/madre'."
     },
     {
       question: "¿Puedo hacer terapia si domino bien el francés o alemán?",
-      answer: "Por supuesto. Aunque domines otros idiomas para el trabajo y la vida cotidiana, muchas personas prefieren hablar de sus emociones en español. El idioma del corazón suele ser el materno."
+      answer: "Por supuesto. Aunque domines otros idiomas para el trabajo y la vida cotidiana, muchas personas prefieren hablar de sus emociones en español. El idioma del corazón suele ser el materno. Para la mayoría de las personas, es la lengua materna, la primera que aprendieron, la que está más conectada con las capas más profundas de la experiencia emocional."
+    },
+    {
+      question: "¿Qué temas son frecuentes entre hispanohablantes en Suiza?",
+      answer: "La adaptación cultural y el duelo migratorio son quizás los más universales. La distancia de la familia genera un dolor particular, especialmente cuando hay enfermedades, muertes, o celebraciones importantes a las que no puedes asistir. La identidad bicultural es otro tema frecuente: ¿Quién soy ahora? ¿Sigo siendo mexicano/español/colombiano si ya llevo años en Suiza? Para quienes tienen hijos, se suma la pregunta sobre cómo transmitir la cultura de origen y cómo mantener el español vivo."
+    },
+    {
+      question: "¿Cómo es la comunidad hispanohablante en Suiza?",
+      answer: "Suiza alberga una comunidad hispanohablante diversa y vibrante, aunque dispersa y menos visible que en otros países europeos. Personas de México, Colombia, España, Argentina, Chile, Perú, Ecuador, Venezuela, y muchos otros países han encontrado en Suiza un lugar para desarrollarse profesionalmente, formar familias, o simplemente buscar nuevas oportunidades. Esta diversidad dentro de la comunidad es algo que tengo muy presente en mi trabajo."
+    },
+    {
+      question: "¿Qué diferencias consideras entre ser español o latinoamericano en Suiza?",
+      answer: "No es lo mismo ser español en Suiza (con pasaporte europeo, sin barreras migratorias) que ser latinoamericano (con procesos de visa complejos y mayor precariedad legal). No es lo mismo venir de una gran ciudad cosmopolita que de un pueblo pequeño. No es lo mismo emigrar por aventura que por necesidad económica o para escapar de la violencia. Estas diferencias importan, y las tengo en cuenta en el proceso terapéutico."
+    },
+    {
+      question: "¿Qué desafíos específicos de ser migrante en Europa entiendes?",
+      answer: "Entiendo los desafíos específicos de ser migrante en Europa: la burocracia interminable, la sensación de ser siempre 'el otro', las microagresiones cotidianas, la presión por integrarse sin perder la identidad, y la fatiga de tener que demostrar constantemente tu valía. Estos temas no son tangenciales a la terapia; muchas veces están en el centro mismo del malestar que las personas traen a consulta."
     }
   ];
 
@@ -40,11 +56,7 @@ const PsicologaEnEspanolSuiza = () => {
       </h2>
       
       <p>
-        El idioma no es simplemente un vehículo neutral para transmitir información: es el recipiente de nuestra historia emocional, el archivo donde guardamos los recuerdos más profundos, el sistema de códigos con el que aprendimos a nombrar el mundo. Las experiencias que vivimos en español –la infancia, los primeros amores, las conversaciones con nuestros padres, los momentos de mayor alegría y mayor dolor– quedaron codificadas en ese idioma. Cuando intentamos hablar de ellas en otro idioma, algo se pierde inevitablemente en la traducción.
-      </p>
-
-      <p className="mt-4">
-        Este fenómeno tiene un nombre: "el idioma del corazón" o "lengua emocional". Para la mayoría de las personas, es la lengua materna, la primera que aprendieron, la que está más conectada con las capas más profundas de la experiencia emocional. Aunque domines perfectamente el alemán, el francés o el inglés para el trabajo y la vida cotidiana, es muy probable que tus emociones más intensas, tus sueños nocturnos, y tu diálogo interno sigan siendo en español.
+        Las experiencias que vivimos en español –la infancia, los primeros amores, las conversaciones con nuestros padres, los momentos de mayor alegría y mayor dolor– quedaron codificadas en ese idioma. Cuando intentamos hablar de ellas en otro idioma, algo se pierde inevitablemente en la traducción.
       </p>
 
       <p className="mt-4">
@@ -54,10 +66,6 @@ const PsicologaEnEspanolSuiza = () => {
       <h2 className="text-2xl font-semibold mt-10 mb-4">
         Temas frecuentes con hispanohablantes en Suiza
       </h2>
-
-      <p>
-        A lo largo de mi práctica he trabajado con hispanohablantes de muy diversos países y situaciones, y ciertos temas aparecen con frecuencia. No porque todas las personas sean iguales, sino porque la experiencia de ser hispanohablante en Suiza tiene elementos comunes que generan desafíos particulares.
-      </p>
 
       <div className="grid md:grid-cols-2 gap-4 my-8 not-prose">
         <div className="flex items-start gap-3 p-4 bg-muted rounded-lg">
@@ -79,23 +87,7 @@ const PsicologaEnEspanolSuiza = () => {
       </div>
 
       <p>
-        La adaptación cultural y el duelo migratorio son quizás los más universales. Independientemente de si vienes de México, España, Colombia o Argentina, emigrar implica pérdidas que muchas veces no se reconocen ni se validan socialmente. La distancia de la familia genera un dolor particular, especialmente cuando hay enfermedades, muertes, o celebraciones importantes a las que no puedes asistir. Y la culpa por "haber abandonado" a la familia es una sombra que acompaña a muchas personas.
-      </p>
-
-      <p className="mt-4">
-        La identidad bicultural es otro tema frecuente: ¿Quién soy ahora? ¿Sigo siendo mexicano/español/colombiano si ya llevo años en Suiza? ¿Pertenezco a algún lugar o estoy en un limbo permanente? Para quienes tienen hijos, se suma la pregunta sobre cómo transmitir la cultura de origen, cómo mantener el español vivo en un entorno donde los niños se adaptan rápidamente al idioma local, y cómo manejar la brecha cultural que puede surgir entre padres e hijos.
-      </p>
-
-      <h2 className="text-2xl font-semibold mt-10 mb-4">
-        La comunidad latinoamericana y española en Suiza
-      </h2>
-      
-      <p>
-        Suiza alberga una comunidad hispanohablante diversa y vibrante, aunque dispersa y menos visible que en otros países europeos. Personas de México, Colombia, España, Argentina, Chile, Perú, Ecuador, Venezuela, y muchos otros países han encontrado en Suiza un lugar para desarrollarse profesionalmente, formar familias, o simplemente buscar nuevas oportunidades. Cada nacionalidad trae su propia cultura, sus costumbres, su forma de ver el mundo, pero todas comparten la experiencia común de ser migrantes en un país con una cultura muy diferente a la latina.
-      </p>
-
-      <p className="mt-4">
-        Esta diversidad dentro de la comunidad hispanohablante es algo que tengo muy presente en mi trabajo. No es lo mismo ser español en Suiza (con pasaporte europeo, sin barreras migratorias) que ser latinoamericano (con procesos de visa complejos y mayor precariedad legal). No es lo mismo venir de una gran ciudad cosmopolita que de un pueblo pequeño. No es lo mismo emigrar por aventura que por necesidad económica o para escapar de la violencia. Estas diferencias importan, y las tengo en cuenta en el proceso terapéutico.
+        Independientemente de si vienes de México, España, Colombia o Argentina, emigrar implica pérdidas que muchas veces no se reconocen ni se validan socialmente. Y la culpa por "haber abandonado" a la familia es una sombra que acompaña a muchas personas.
       </p>
 
       <h2 className="text-2xl font-semibold mt-10 mb-4">
@@ -103,11 +95,7 @@ const PsicologaEnEspanolSuiza = () => {
       </h2>
       
       <p>
-        Mi compromiso es ofrecer un espacio donde puedas sentirte genuinamente comprendida, sin tener que explicar el contexto cultural de cada cosa que dices. Entiendo las dinámicas familiares latinoamericanas y españolas: el peso de las expectativas familiares, la importancia de la familia extendida, los roles de género tradicionales y cómo negociarlos, la forma en que se expresa (o se calla) el afecto, y los mandatos implícitos sobre el éxito, el matrimonio, los hijos, y lo que significa "ser una buena hija/esposa/madre".
-      </p>
-
-      <p className="mt-4">
-        También entiendo los desafíos específicos de ser migrante en Europa: la burocracia interminable, la sensación de ser siempre "el otro", las microagresiones cotidianas, la presión por integrarse sin perder la identidad, y la fatiga de tener que demostrar constantemente tu valía. Estos temas no son tangenciales a la terapia; muchas veces están en el centro mismo del malestar que las personas traen a consulta.
+        Mi compromiso es ofrecer un espacio donde puedas sentirte genuinamente comprendida, sin tener que explicar el contexto cultural de cada cosa que dices. Entiendo las dinámicas familiares latinoamericanas y españolas: el peso de las expectativas familiares, la importancia de la familia extendida, y los desafíos de ser migrante en Europa.
       </p>
 
       <p className="mt-4">

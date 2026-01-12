@@ -5,11 +5,11 @@ const BurnoutSuiza = () => {
   const faqs = [
     {
       question: "¿Cómo sé si tengo burnout o solo estoy cansado?",
-      answer: "El cansancio normal se alivia con descanso. El burnout es un agotamiento profundo que persiste incluso después de vacaciones, acompañado de cinismo hacia el trabajo y sensación de ineficacia. Si sientes que el descanso ya no te recupera, puede ser burnout."
+      answer: "El cansancio normal se alivia con descanso. El burnout es un agotamiento profundo que persiste incluso después de vacaciones, acompañado de cinismo hacia el trabajo y sensación de ineficacia. Si sientes que el descanso ya no te recupera, puede ser burnout. Uno de los signos más claros del burnout es cuando regresas de vacaciones sintiéndote igual o peor que cuando te fuiste. El descanso tradicional ya no funciona porque el problema no es solo físico: hay algo roto en tu relación con el trabajo."
     },
     {
       question: "¿El burnout es reconocido como enfermedad?",
-      answer: "La OMS reconoce el burnout como un fenómeno ocupacional. Aunque no es un diagnóstico médico en sí mismo, puede derivar en problemas de salud mental como ansiedad y depresión que sí requieren tratamiento."
+      answer: "La OMS reconoce el burnout como un fenómeno ocupacional caracterizado por tres dimensiones principales: agotamiento extremo, distanciamiento mental del trabajo (cinismo), y sensación de ineficacia o falta de realización profesional. Aunque no es un diagnóstico médico en sí mismo, puede derivar en problemas de salud mental como ansiedad y depresión que sí requieren tratamiento."
     },
     {
       question: "¿Necesito dejar mi trabajo para recuperarme del burnout?",
@@ -21,7 +21,23 @@ const BurnoutSuiza = () => {
     },
     {
       question: "¿Por qué el burnout es tan común entre expatriados?",
-      answer: "Los expatriados enfrentan presiones adicionales: demostrar que merecen la oportunidad, rendir en otro idioma, adaptarse culturalmente, y mantener un nivel de vida costoso. Todo esto se suma al estrés laboral normal."
+      answer: "Los expatriados enfrentan presiones adicionales: demostrar que merecen la oportunidad, rendir en otro idioma, adaptarse culturalmente, y mantener un nivel de vida costoso. Trabajar en un idioma que no es el materno requiere un esfuerzo cognitivo adicional constante. Aunque domines el alemán, francés o inglés, piensas, sueñas y procesas emociones en español. Traducir continuamente, estar atento a matices culturales, y preocuparte por cómo te perciben añade una carga invisible que se acumula."
+    },
+    {
+      question: "¿Cómo afecta la cultura laboral suiza al riesgo de burnout?",
+      answer: "Suiza tiene una de las culturas laborales más exigentes de Europa, construida sobre los valores de la precisión, la puntualidad, la eficiencia y el alto rendimiento. Para quienes trabajan en Suiza, especialmente los expatriados hispanohablantes, la presión tiene capas adicionales. No solo hay que rendir al máximo nivel, sino que hay que hacerlo en un idioma que no es el materno, navegando códigos culturales que pueden ser sutiles pero importantes."
+    },
+    {
+      question: "¿Qué papel juega el costo de vida en el burnout?",
+      answer: "El costo de vida en Suiza añade otra capa de presión. Los salarios son altos, pero también lo son los gastos: alquileres, seguros, guarderías, impuestos. Muchas personas se sienten atrapadas en un círculo donde trabajan intensamente para mantener un nivel de vida que apenas les deja tiempo para disfrutarlo. Y cuando consideran reducir horas o cambiar a un trabajo menos exigente, el miedo a no poder mantener el estilo de vida las paraliza."
+    },
+    {
+      question: "¿Cómo es el tratamiento integral para el burnout?",
+      answer: "Mi enfoque para tratar el burnout combina intervenciones cognitivo-conductuales con un trabajo más profundo sobre valores, identidad y la relación con el trabajo. Incluye: establecer límites saludables, identificar patrones disfuncionales (perfeccionismo, necesidad de aprobación, miedo al fracaso), reconectar con valores personales, desarrollar autocuidado sostenible, y gestión práctica del estrés."
+    },
+    {
+      question: "¿Cuáles son las señales de alerta del burnout que debo vigilar?",
+      answer: "Las señales incluyen agotamiento que no mejora con descanso, cinismo hacia el trabajo, sensación de ineficacia, problemas de sueño (especialmente despertarse pensando en el trabajo), irritabilidad aumentada, dolores de cabeza o musculares frecuentes, problemas digestivos, mayor susceptibilidad a enfermedades, y recurrir cada vez más a sustancias (alcohol, cafeína, medicamentos) para funcionar o desconectar."
     }
   ];
 
@@ -41,26 +57,6 @@ const BurnoutSuiza = () => {
       
       <p>
         Suiza tiene una de las culturas laborales más exigentes de Europa, y esto no es casualidad: el país se ha construido sobre los valores de la precisión, la puntualidad, la eficiencia y el alto rendimiento. Estos valores, que en muchos sentidos son admirables y han llevado al país a niveles extraordinarios de desarrollo, también tienen un lado oscuro. La presión por cumplir con estándares elevados de manera constante puede convertirse en una fuente de estrés crónico que eventualmente conduce al agotamiento.
-      </p>
-
-      <p className="mt-4">
-        Para quienes trabajan en Suiza, especialmente los expatriados hispanohablantes, la presión tiene capas adicionales. No solo hay que rendir al máximo nivel, sino que hay que hacerlo en un idioma que no es el materno, navegando códigos culturales que pueden ser sutiles pero importantes. Muchos sienten que tienen que demostrar constantemente que merecen estar ahí, que justifican el salario que reciben, que no son "menos" que sus colegas suizos o europeos. Esta necesidad de probarse continuamente es agotadora.
-      </p>
-
-      <p className="mt-4">
-        El costo de vida en Suiza añade otra capa de presión. Los salarios son altos, pero también lo son los gastos: alquileres, seguros, guarderías, impuestos. Muchas personas se sienten atrapadas en un círculo donde trabajan intensamente para mantener un nivel de vida que apenas les deja tiempo para disfrutarlo. Y cuando consideran reducir horas o cambiar a un trabajo menos exigente, el miedo a no poder mantener el estilo de vida –o a decepcionar a la familia en el país de origen que espera recibir apoyo– las paraliza.
-      </p>
-
-      <h2 className="text-2xl font-semibold mt-10 mb-4">
-        ¿Qué es exactamente el burnout?
-      </h2>
-
-      <p>
-        El burnout, o síndrome de desgaste profesional, es un estado de agotamiento físico, emocional y mental causado por el estrés laboral crónico. La Organización Mundial de la Salud lo reconoce como un fenómeno ocupacional caracterizado por tres dimensiones principales: agotamiento extremo, distanciamiento mental del trabajo (cinismo), y sensación de ineficacia o falta de realización profesional.
-      </p>
-
-      <p className="mt-4">
-        A diferencia del cansancio normal, que se alivia con descanso, el burnout es un estado más profundo del que no se sale simplemente con unas vacaciones. De hecho, uno de los signos más claros del burnout es cuando regresas de vacaciones sintiéndote igual o peor que cuando te fuiste. El descanso tradicional ya no funciona porque el problema no es solo físico: hay algo roto en tu relación con el trabajo.
       </p>
 
       <h2 className="text-2xl font-semibold mt-10 mb-4">
@@ -90,26 +86,6 @@ const BurnoutSuiza = () => {
         </div>
       </div>
 
-      <p>
-        Otras señales incluyen problemas de sueño (especialmente despertarse pensando en el trabajo), irritabilidad aumentada, dolores de cabeza o musculares frecuentes, problemas digestivos, mayor susceptibilidad a enfermedades, y recurrir cada vez más a sustancias (alcohol, cafeína, medicamentos) para funcionar o desconectar. A nivel emocional, puedes sentir ansiedad los domingos por la noche pensando en la semana que viene, o sentir que ya no reconoces a la persona en que te has convertido.
-      </p>
-
-      <h2 className="text-2xl font-semibold mt-10 mb-4">
-        El burnout en expatriados: presiones adicionales
-      </h2>
-
-      <p>
-        Para los expatriados hispanohablantes en Suiza, el riesgo de burnout es particularmente alto debido a presiones adicionales que sus colegas locales no enfrentan. Está la presión de demostrar que mereces la oportunidad, de justificar la decisión de emigrar, de no decepcionar a la familia que quizás depende económicamente de ti o que hizo sacrificios para que pudieras estudiar y progresar.
-      </p>
-
-      <p className="mt-4">
-        Trabajar en un idioma que no es el materno requiere un esfuerzo cognitivo adicional constante. Aunque domines el alemán, francés o inglés, piensas, sueñas y procesas emociones en español. Traducir continuamente, estar atento a matices culturales, y preocuparte por cómo te perciben añade una carga invisible que se acumula. Y cuando algo sale mal, muchos expatriados se preguntan si los juzgarán más duramente por ser extranjeros.
-      </p>
-
-      <p className="mt-4">
-        Además, la red de apoyo suele ser más limitada. No tienes a tu familia cerca para ayudar con los niños o simplemente para desahogarte. Los amigos que has hecho pueden estar igual de ocupados y estresados, o pueden irse del país en cualquier momento. La soledad del éxito profesional en el extranjero es un tema que aparece frecuentemente en mi consulta.
-      </p>
-
       <h2 className="text-2xl font-semibold mt-10 mb-4">
         Recuperación integral del burnout
       </h2>
@@ -132,10 +108,6 @@ const BurnoutSuiza = () => {
       
       <p>
         Una de las características del burnout es que se desarrolla gradualmente, y muchas personas no buscan ayuda hasta que ya están en una crisis severa: una baja médica, un ataque de pánico, o una decisión impulsiva como renunciar sin tener otro plan. Cuanto antes intervengas en el proceso, más fácil será recuperar el equilibrio y prevenir consecuencias más graves.
-      </p>
-
-      <p className="mt-4">
-        Si reconoces en ti algunas de las señales de alerta que he descrito, no lo minimices pensando que "todo el mundo está estresado" o que "es normal en este trabajo". El estrés crónico tiene consecuencias reales para tu salud física y mental. Buscar apoyo profesional no es un lujo ni una señal de debilidad: es una inversión inteligente en tu bienestar y en tu capacidad de sostener una carrera satisfactoria a largo plazo.
       </p>
 
       <p className="mt-4">
