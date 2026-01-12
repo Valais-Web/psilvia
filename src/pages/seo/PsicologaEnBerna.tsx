@@ -9,19 +9,35 @@ const PsicologaEnBerna = () => {
     },
     {
       question: "¿Trabajas con personal diplomático?",
-      answer: "Sí, tengo experiencia con diplomáticos y funcionarios internacionales que enfrentan desafíos particulares: rotaciones frecuentes, presión de representación, y familias acompañantes."
+      answer: "Sí, tengo experiencia con diplomáticos y funcionarios internacionales que enfrentan desafíos particulares: rotaciones frecuentes, presión de representación, y familias acompañantes. La vida diplomática implica representar a tu país, mantener cierta imagen, y navegar relaciones políticas complejas."
     },
     {
       question: "¿Por qué es especialmente difícil para hispanohablantes en Berna?",
-      answer: "La comunidad hispanohablante en Berna es pequeña comparada con Ginebra o Zúrich. Hay menos recursos en español, menos oportunidades de conectar, y mayor presión para integrarse al entorno local."
+      answer: "La comunidad hispanohablante en Berna es pequeña comparada con Ginebra o Zúrich. Hay menos recursos en español, menos oportunidades de conectar, y mayor presión para integrarse al entorno local. Los recursos de salud mental en español son prácticamente inexistentes localmente."
     },
     {
       question: "¿Atiendes a cónyuges acompañantes?",
-      answer: "Sí, los cónyuges que dejaron sus carreras para acompañar a la pareja enfrentan desafíos particulares: pérdida de identidad profesional, aislamiento, y el mercado laboral limitado para no alemán-parlantes."
+      answer: "Sí, los cónyuges que dejaron sus carreras para acompañar a la pareja enfrentan desafíos particulares: pérdida de identidad profesional, aislamiento, y el mercado laboral limitado para no alemán-parlantes. Esta pérdida de identidad profesional puede ser devastadora para el bienestar emocional."
     },
     {
       question: "¿Berna es buena ciudad para familias?",
       answer: "Sí, su tamaño manejable, seguridad y ritmo pausado la hacen atractiva para familias. Sin embargo, la crianza sin apoyo de familia extendida y el aislamiento pueden ser desafiantes."
+    },
+    {
+      question: "¿Qué hace única a Berna como capital federal?",
+      answer: "Berna tiene un carácter distintivo entre las ciudades suizas. Es el centro político del país, sede del gobierno federal, del parlamento, y de numerosas embajadas y representaciones internacionales. Pero a diferencia de otras capitales europeas, Berna mantiene un ambiente casi de pueblo grande: su casco histórico medieval (Patrimonio de la Humanidad), su ritmo pausado, y su población relativamente pequeña le dan un carácter íntimo y acogedor que contrasta con su importancia política."
+    },
+    {
+      question: "¿Cuáles son los desafíos específicos de la vida diplomática en Berna?",
+      answer: "Para quienes trabajan en el sector diplomático, hay presiones adicionales. Los cónyuges diplomáticos enfrentan sus propios desafíos: suelen tener que abandonar sus carreras profesionales para acompañar a su pareja, reinventándose cada pocos años cuando llega la siguiente rotación. Las rotaciones frecuentes crean dificultad para formar vínculos estables: cuando sabes que en tres o cuatro años te irás a otro destino, puede ser difícil invertir emocionalmente en amistades profundas."
+    },
+    {
+      question: "¿Cómo es el entorno laboral para hispanohablantes en Berna?",
+      answer: "Muchos hispanohablantes en Berna trabajan en embajadas latinoamericanas o españolas, en organizaciones internacionales con sede en la ciudad, o en la administración federal suiza. También hay quienes trabajan en sectores no diplomáticos: empresas suizas, el sector tecnológico, la universidad, o profesiones liberales. Para ellos, el desafío suele ser la integración a un entorno laboral suizo-alemán donde las expectativas culturales pueden ser muy diferentes a las latinas."
+    },
+    {
+      question: "¿Por qué la terapia online es especialmente útil en Berna?",
+      answer: "En una ciudad donde los recursos de salud mental en español son prácticamente inexistentes, la terapia online se convierte en un puente invaluable. Te permite acceder a atención psicológica profesional en tu idioma materno, con una profesional que comprende tu contexto cultural, sin las limitaciones de la escasa oferta local. La modalidad online también tiene ventajas prácticas específicas para Berna: flexibilidad para horarios impredecibles del sector diplomático, continuidad si viajas frecuentemente, y privacidad en un entorno donde 'todos se conocen'."
     }
   ];
 
@@ -36,22 +52,6 @@ const PsicologaEnBerna = () => {
       disclaimer="Información legal: Los servicios corresponden a psicoterapia privada en modalidad online. No forman parte del sistema de salud suizo ni están cubiertos por seguros médicos en Suiza. La formación profesional fue completada en México y España."
     >
       <h2 className="text-2xl font-semibold mt-8 mb-4">
-        La capital federal: entre lo político y lo íntimo
-      </h2>
-      
-      <p>
-        Berna tiene un carácter distintivo entre las ciudades suizas. Es el centro político del país, sede del gobierno federal, del parlamento, y de numerosas embajadas y representaciones internacionales. Pero a diferencia de otras capitales europeas, Berna mantiene un ambiente casi de pueblo grande: su casco histórico medieval (Patrimonio de la Humanidad), su ritmo pausado, y su población relativamente pequeña le dan un carácter íntimo y acogedor que contrasta con su importancia política.
-      </p>
-
-      <p className="mt-4">
-        Para los hispanohablantes que viven en Berna, esta dualidad se traduce en experiencias contrastantes. Por un lado, las oportunidades profesionales en el sector diplomático y administrativo son significativas. Por otro lado, la comunidad hispanohablante es notablemente más pequeña que en Ginebra o Zúrich, lo que puede hacer que el aislamiento sea más pronunciado. Hay menos restaurantes latinos, menos tiendas de productos de casa, menos eventos culturales en español. Y los recursos de salud mental en español son prácticamente inexistentes localmente.
-      </p>
-
-      <p className="mt-4">
-        El idioma predominante en Berna es el alemán (específicamente el dialecto bernés), aunque el francés también tiene presencia oficial. Para hispanohablantes, esto significa una barrera lingüística adicional que puede dificultar la integración social y el acceso a servicios. Muchas personas me cuentan que después de años en Berna, siguen sintiéndose como forasteros porque la integración a la sociedad suiza-alemana es particularmente difícil.
-      </p>
-
-      <h2 className="text-2xl font-semibold mt-10 mb-4">
         Desafíos particulares de la comunidad hispanohablante en Berna
       </h2>
 
@@ -79,27 +79,7 @@ const PsicologaEnBerna = () => {
       </div>
 
       <p>
-        Para quienes trabajan en el sector diplomático, hay presiones adicionales. La vida diplomática implica representar a tu país, mantener cierta imagen, y navegar relaciones políticas complejas. Los cónyuges diplomáticos enfrentan sus propios desafíos: suelen tener que abandonar sus carreras profesionales para acompañar a su pareja, reinventándose cada pocos años cuando llega la siguiente rotación. Esta pérdida de identidad profesional puede ser devastadora para el bienestar emocional.
-      </p>
-
-      <p className="mt-4">
-        Las rotaciones frecuentes que caracterizan la vida diplomática crean otro desafío: la dificultad para formar vínculos estables. Cuando sabes que en tres o cuatro años te irás a otro destino, puede ser difícil invertir emocionalmente en amistades profundas. Y cuando llegas a un nuevo destino, empiezas de cero una vez más. Esta transitoriedad constante puede generar fatiga relacional y una sensación de nunca pertenecer completamente a ningún lugar.
-      </p>
-
-      <h2 className="text-2xl font-semibold mt-10 mb-4">
-        El entorno diplomático y administrativo
-      </h2>
-      
-      <p>
-        Muchos hispanohablantes en Berna trabajan en embajadas latinoamericanas o españolas, en organizaciones internacionales con sede en la ciudad, o en la administración federal suiza. Cada uno de estos entornos tiene sus propias dinámicas y presiones. El trabajo diplomático, por ejemplo, puede ser gratificante pero también estresante: largas jornadas durante visitas oficiales o eventos importantes, la presión de representar bien a tu país, y las dinámicas jerárquicas propias de las estructuras diplomáticas.
-      </p>
-
-      <p className="mt-4">
-        Para las familias diplomáticas, la experiencia tiene capas adicionales de complejidad. Los niños cambian de escuela cada pocos años, perdiendo amigos y teniendo que adaptarse constantemente a nuevos entornos. Los adolescentes pueden resentir especialmente estas mudanzas forzadas. Y los cónyuges que dejaron sus carreras enfrentan el desafío de encontrar sentido y propósito en una ciudad donde las oportunidades laborales para no-alemán-parlantes son limitadas.
-      </p>
-
-      <p className="mt-4">
-        También hay hispanohablantes en Berna que trabajan en sectores no diplomáticos: empresas suizas, el sector tecnológico, la universidad, o profesiones liberales. Para ellos, el desafío suele ser la integración a un entorno laboral suizo-alemán donde las expectativas culturales pueden ser muy diferentes a las latinas. La comunicación indirecta, la importancia de los procedimientos, y la reserva emocional pueden resultar desconcertantes para quienes vienen de culturas más expresivas.
+        El idioma predominante en Berna es el alemán (específicamente el dialecto bernés), aunque el francés también tiene presencia oficial. Para hispanohablantes, esto significa una barrera lingüística adicional que puede dificultar la integración social y el acceso a servicios. Muchas personas me cuentan que después de años en Berna, siguen sintiéndose como forasteros porque la integración a la sociedad suiza-alemana es particularmente difícil.
       </p>
 
       <h2 className="text-2xl font-semibold mt-10 mb-4">
@@ -107,11 +87,7 @@ const PsicologaEnBerna = () => {
       </h2>
       
       <p>
-        En una ciudad donde los recursos de salud mental en español son prácticamente inexistentes, la terapia online se convierte en un puente invaluable. Te permite acceder a atención psicológica profesional en tu idioma materno, con una profesional que comprende tu contexto cultural, sin las limitaciones de la escasa oferta local. No tienes que conformarte con terapia en alemán o resignarte a no recibir apoyo.
-      </p>
-
-      <p className="mt-4">
-        La modalidad online también tiene ventajas prácticas específicas para Berna. Si trabajas en el sector diplomático con horarios impredecibles, la flexibilidad de las sesiones online puede ser crucial. Si viajas frecuentemente por trabajo, puedes mantener la continuidad del proceso terapéutico desde cualquier lugar. Y si valoras la privacidad en un entorno donde "todos se conocen", la discreción de conectarte desde tu casa puede ser importante.
+        No tienes que conformarte con terapia en alemán o resignarte a no recibir apoyo. La modalidad online también tiene ventajas prácticas específicas para Berna. Si trabajas en el sector diplomático con horarios impredecibles, la flexibilidad de las sesiones online puede ser crucial. Si viajas frecuentemente por trabajo, puedes mantener la continuidad del proceso terapéutico desde cualquier lugar.
       </p>
 
       <p className="mt-4">

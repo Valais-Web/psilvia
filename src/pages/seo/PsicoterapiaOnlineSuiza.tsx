@@ -5,7 +5,7 @@ const PsicoterapiaOnlineSuiza = () => {
   const faqs = [
     {
       question: "¿La terapia online es igual de efectiva que la presencial?",
-      answer: "Sí, numerosos estudios científicos demuestran que la terapia online es igual de efectiva que la presencial para el tratamiento de ansiedad, depresión y otros problemas emocionales. La conexión terapéutica depende de la calidad del vínculo y el trabajo colaborativo, no de la presencia física."
+      answer: "Sí, numerosos estudios científicos demuestran que la terapia online es igual de efectiva que la presencial para el tratamiento de ansiedad, depresión y otros problemas emocionales. La conexión terapéutica depende de la calidad del vínculo y el trabajo colaborativo, no de la presencia física. Lo que determina la efectividad de la terapia no es la presencia física, sino la calidad del vínculo terapéutico y el compromiso con el proceso de cambio."
     },
     {
       question: "¿Cómo funcionan las sesiones online?",
@@ -22,6 +22,22 @@ const PsicoterapiaOnlineSuiza = () => {
     {
       question: "¿Cómo agendo mi primera sesión?",
       answer: "Puedes agendar directamente desde esta página haciendo clic en 'Agendar sesión'. Verás el calendario con los horarios disponibles adaptados a tu zona horaria."
+    },
+    {
+      question: "¿Por qué elegir psicoterapia online viviendo en Suiza?",
+      answer: "Vivir en Suiza representa una oportunidad extraordinaria en muchos sentidos: estabilidad económica, seguridad, calidad de vida. Sin embargo, esta experiencia también conlleva desafíos emocionales que muchas veces permanecen invisibles. La distancia de la familia, la adaptación a una cultura muy diferente a la latina, las exigencias del entorno laboral, y la búsqueda constante de un nuevo equilibrio pueden generar un desgaste emocional significativo. Para los hispanohablantes en Suiza, estos desafíos se multiplican por la barrera del idioma y la escasez de recursos de salud mental en español."
+    },
+    {
+      question: "¿Qué temas trabajas en consulta?",
+      answer: "Mi práctica clínica se centra en los problemas emocionales más comunes entre hispanohablantes en Suiza: ansiedad y preocupación constante, depresión y estados de ánimo bajos, burnout y agotamiento laboral, adaptación cultural y duelo migratorio, autoestima y autocrítica, conflictos de pareja y familiares (especialmente en contextos interculturales), y transiciones vitales importantes."
+    },
+    {
+      question: "¿Cuál es tu enfoque terapéutico?",
+      answer: "Soy Silvia Gómez, Licenciada en Psicología con formación de posgrado en Psicoterapia Cognitivo-Conductual. Mi enfoque se basa en la psicología científica: utilizo técnicas y estrategias que han demostrado su eficacia en estudios de investigación rigurosos. Lo que distingue a la Terapia Cognitivo-Conductual es su orientación práctica y su foco en el presente. Trabajamos para entender por qué te sientes, piensas o actúas de cierta manera, identificando los patrones que mantienen el malestar. Pero el énfasis está en qué puedes hacer para generar un cambio real y sostenible."
+    },
+    {
+      question: "¿Cuáles son las ventajas prácticas de la terapia online?",
+      answer: "La psicoterapia online ofrece ventajas prácticas especialmente adecuadas para la vida en Suiza. En un país donde el tiempo es un recurso precioso y las agendas están saturadas, evitar el desplazamiento a una consulta puede ser la diferencia entre poder asistir a terapia regularmente o no. Puedes conectarte desde tu casa después del trabajo, desde la oficina durante la pausa del almuerzo, o incluso desde un hotel cuando estás de viaje por trabajo."
     }
   ];
 
@@ -35,19 +51,11 @@ const PsicoterapiaOnlineSuiza = () => {
       faqs={faqs}
     >
       <h2 className="text-2xl font-semibold mt-8 mb-4">
-        ¿Por qué elegir psicoterapia online?
+        Accesibilidad y calidad en tu idioma
       </h2>
       
       <p>
-        Vivir en Suiza representa una oportunidad extraordinaria en muchos sentidos: estabilidad económica, seguridad, calidad de vida, acceso a la naturaleza, y la posibilidad de desarrollarse profesionalmente en un entorno de primer nivel. Sin embargo, esta experiencia también conlleva desafíos emocionales que muchas veces permanecen invisibles, incluso para quienes los experimentan. La distancia de la familia, la adaptación a una cultura muy diferente a la latina, las exigencias del entorno laboral, y la búsqueda constante de un nuevo equilibrio pueden generar un desgaste emocional significativo.
-      </p>
-
-      <p className="mt-4">
-        Para los hispanohablantes en Suiza, estos desafíos se multiplican por la barrera del idioma y la escasez de recursos de salud mental en español. Encontrar un psicólogo que hable español en Suiza puede ser extremadamente difícil: hay pocos profesionales, las listas de espera son largas, y las tarifas de la terapia presencial suiza están entre las más altas de Europa. La psicoterapia online resuelve estos obstáculos, permitiéndote acceder a atención de calidad en tu idioma materno sin importar en qué cantón vivas.
-      </p>
-
-      <p className="mt-4">
-        Además, la psicoterapia online ofrece ventajas prácticas que la hacen especialmente adecuada para la vida en Suiza. En un país donde el tiempo es un recurso precioso y las agendas están saturadas, evitar el desplazamiento a una consulta puede ser la diferencia entre poder asistir a terapia regularmente o no. Puedes conectarte desde tu casa después del trabajo, desde la oficina durante la pausa del almuerzo, o incluso desde un hotel cuando estás de viaje por trabajo.
+        Encontrar un psicólogo que hable español en Suiza puede ser extremadamente difícil: hay pocos profesionales, las listas de espera son largas, y las tarifas de la terapia presencial suiza están entre las más altas de Europa. La psicoterapia online resuelve estos obstáculos, permitiéndote acceder a atención de calidad en tu idioma materno sin importar en qué cantón vivas.
       </p>
 
       <div className="grid md:grid-cols-2 gap-4 my-8 not-prose">
@@ -74,20 +82,12 @@ const PsicoterapiaOnlineSuiza = () => {
       </h2>
 
       <p>
-        Una pregunta frecuente es si la terapia online puede ser tan efectiva como la terapia presencial. La respuesta, respaldada por décadas de investigación, es sí. Numerosos estudios clínicos han demostrado que la terapia cognitivo-conductual online produce resultados equivalentes a la presencial para el tratamiento de ansiedad, depresión, estrés postraumático, y otros problemas emocionales.
-      </p>
-
-      <p className="mt-4">
-        Lo que determina la efectividad de la terapia no es la presencia física, sino la calidad del vínculo terapéutico y el compromiso con el proceso de cambio. A través de la videollamada, es perfectamente posible establecer una conexión genuina, trabajar con profundidad, y lograr transformaciones significativas. Miles de personas en todo el mundo han experimentado los beneficios de la terapia online, y la pandemia aceleró la adopción de esta modalidad incluso entre quienes inicialmente eran escépticos.
+        A través de la videollamada, es perfectamente posible establecer una conexión genuina, trabajar con profundidad, y lograr transformaciones significativas. Miles de personas en todo el mundo han experimentado los beneficios de la terapia online, y la pandemia aceleró la adopción de esta modalidad incluso entre quienes inicialmente eran escépticos.
       </p>
 
       <h2 className="text-2xl font-semibold mt-10 mb-4">
         Temas que trabajo en consulta
       </h2>
-      
-      <p>
-        Mi práctica clínica se centra en los problemas emocionales más comunes entre los hispanohablantes en Suiza. Si bien cada persona es única y el tratamiento se personaliza según tus necesidades, hay ciertos temas que aparecen con frecuencia en mi consulta y para los cuales tengo formación y experiencia específica.
-      </p>
 
       <ul>
         <li><strong>Ansiedad:</strong> Preocupación constante, tensión, ataques de pánico, miedos específicos, ansiedad social, y la sensación de que algo malo está por pasar aunque no haya evidencia real</li>
@@ -100,18 +100,10 @@ const PsicoterapiaOnlineSuiza = () => {
       </ul>
 
       <h2 className="text-2xl font-semibold mt-10 mb-4">
-        Mi enfoque terapéutico
+        Un espacio seguro para tu proceso
       </h2>
       
       <p>
-        Soy Silvia Gómez, Licenciada en Psicología con formación de posgrado en Psicoterapia Cognitivo-Conductual. Mi enfoque se basa en la psicología científica: utilizo técnicas y estrategias que han demostrado su eficacia en estudios de investigación rigurosos. Esto no significa que la terapia sea fría o mecánica; al contrario, la relación terapéutica cálida y empática es un ingrediente esencial del proceso.
-      </p>
-
-      <p className="mt-4">
-        Lo que distingue a la Terapia Cognitivo-Conductual es su orientación práctica y su foco en el presente. Trabajamos para entender por qué te sientes, piensas o actúas de cierta manera, identificando los patrones que mantienen el malestar. Pero el énfasis está en qué puedes hacer para generar un cambio real y sostenible. Cada sesión tiene un propósito claro, y te llevas herramientas concretas que puedes aplicar en tu vida cotidiana.
-      </p>
-
-      <p className="mt-4">
         Mi compromiso es ofrecerte un espacio seguro, confidencial y libre de juicio donde puedas explorar lo que te preocupa, entender lo que te pasa, y trabajar activamente para construir una vida más alineada con lo que realmente te importa. Si buscas psicoterapia online en español en Suiza, estoy aquí para acompañarte.
       </p>
     </SEOPageLayout>
