@@ -216,7 +216,7 @@ const Terapia = () => {
 
           <div className="w-full rounded-lg overflow-hidden shadow-lg">
             <iframe
-              src="https://hub.holaelo.app/agendar/psilvia"
+              src="https://calendly.com/silviagomez-psic/tcc"
               width="100%"
               height="1200"
               frameBorder="0"
