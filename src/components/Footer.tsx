@@ -62,6 +62,27 @@ const Footer = () => {
           </div>
 
           <div>
+            <h3 className="text-lg font-semibold mb-4 text-foreground">Ciudades</h3>
+            <nav className="flex flex-col gap-2">
+              <Link to="/psicologa-en-ginebra" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
+                Ginebra
+              </Link>
+              <Link to="/psicologa-en-lausana" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
+                Lausana
+              </Link>
+              <Link to="/psicologa-en-zurich" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
+                Zúrich
+              </Link>
+              <Link to="/psicologa-en-berna" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
+                Berna
+              </Link>
+              <Link to="/psicologa-en-basilea" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
+                Basilea
+              </Link>
+            </nav>
+          </div>
+
+          <div>
             <h3 className="text-lg font-semibold mb-4 text-foreground">Sígueme en redes</h3>
             <div className="flex gap-4">
               <a 
