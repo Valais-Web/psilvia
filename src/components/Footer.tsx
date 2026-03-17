@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="bg-muted border-t border-border">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <h3 className="text-lg font-semibold mb-4 text-foreground">Contacto</h3>
             <p className="text-muted-foreground mb-2">
@@ -33,6 +33,51 @@ const Footer = () => {
               </Link>
               <Link to="/sobre-mi" className="text-muted-foreground hover:text-foreground transition-colors">
                 Sobre mí
+              </Link>
+            </nav>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-semibold mb-4 text-foreground">Terapia online</h3>
+            <nav className="flex flex-col gap-2">
+              <Link to="/psicoterapia-online-suiza" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
+                Psicoterapia online en Suiza
+              </Link>
+              <Link to="/psicologa-en-espanol-suiza" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
+                Psicóloga en español
+              </Link>
+              <Link to="/ansiedad-suiza" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
+                Ansiedad
+              </Link>
+              <Link to="/depresion-suiza" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
+                Depresión
+              </Link>
+              <Link to="/burnout-suiza" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
+                Burnout
+              </Link>
+              <Link to="/adaptacion-cultural-suiza" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
+                Adaptación cultural
+              </Link>
+            </nav>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-semibold mb-4 text-foreground">Ciudades</h3>
+            <nav className="flex flex-col gap-2">
+              <Link to="/psicologa-en-ginebra" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
+                Ginebra
+              </Link>
+              <Link to="/psicologa-en-lausana" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
+                Lausana
+              </Link>
+              <Link to="/psicologa-en-zurich" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
+                Zúrich
+              </Link>
+              <Link to="/psicologa-en-berna" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
+                Berna
+              </Link>
+              <Link to="/psicologa-en-basilea" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
+                Basilea
               </Link>
             </nav>
           </div>

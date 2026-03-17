@@ -48,6 +48,7 @@ const PsicoterapiaOnlineSuiza = () => {
       heroTitle="Psicoterapia online en Suiza"
       heroSubtitle="Acompañamiento psicológico profesional en español para hispanohablantes en cualquier cantón de Suiza. Sesiones flexibles desde la comodidad de tu hogar."
       badgeText="Para hispanohablantes en Suiza"
+      canonicalPath="/psicoterapia-online-suiza"
       faqs={faqs}
     >
       <h2 className="text-2xl font-semibold mt-8 mb-4">

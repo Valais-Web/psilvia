@@ -48,6 +48,7 @@ const PsicologaEnZurich = () => {
       heroTitle="Psicóloga online en Zúrich"
       heroSubtitle="Atención psicológica en español para profesionales hispanohablantes en el motor económico de Suiza. Entiendo la presión del entorno laboral zuiqués."
       badgeText="Zúrich"
+      canonicalPath="/psicologa-en-zurich"
       faqs={faqs}
       disclaimer="Nota legal: Este servicio es de psicoterapia privada en modalidad online. No constituye una prestación reconocida por el sistema sanitario suizo ni está cubierto por seguros médicos en Suiza. La formación profesional fue obtenida en México y España."
     >
