@@ -38,6 +38,30 @@ const Footer = () => {
           </div>
 
           <div>
+            <h3 className="text-lg font-semibold mb-4 text-foreground">Terapia online</h3>
+            <nav className="flex flex-col gap-2">
+              <Link to="/psicoterapia-online-suiza" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
+                Psicoterapia online en Suiza
+              </Link>
+              <Link to="/psicologa-en-espanol-suiza" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
+                Psicóloga en español
+              </Link>
+              <Link to="/ansiedad-suiza" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
+                Ansiedad
+              </Link>
+              <Link to="/depresion-suiza" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
+                Depresión
+              </Link>
+              <Link to="/burnout-suiza" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
+                Burnout
+              </Link>
+              <Link to="/adaptacion-cultural-suiza" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
+                Adaptación cultural
+              </Link>
+            </nav>
+          </div>
+
+          <div>
             <h3 className="text-lg font-semibold mb-4 text-foreground">Sígueme en redes</h3>
             <div className="flex gap-4">
               <a 
