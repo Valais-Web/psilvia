@@ -20,10 +20,13 @@ interface SEOPageLayoutProps {
   heroTitle: string;
   heroSubtitle: string;
   badgeText?: string;
+  canonicalPath: string;
   children: React.ReactNode;
   faqs: FAQ[];
   disclaimer?: string;
 }
+
+const SITE_URL = "https://psilvia.com";
 
 export const SEOPageLayout = ({ 
   title, 
@@ -31,17 +34,59 @@ export const SEOPageLayout = ({
   heroTitle,
   heroSubtitle,
   badgeText = "Psicoterapia online",
+  canonicalPath,
   children,
   faqs,
   disclaimer = "Nota legal: Los servicios ofrecidos corresponden a psicoterapia privada en modalidad online. No constituyen una prestación reconocida por el sistema sanitario suizo ni están cubiertos por seguros de salud en Suiza. La habilitación profesional corresponde a la formación obtenida en México y España."
 }: SEOPageLayoutProps) => {
+  const canonicalUrl = `${SITE_URL}${canonicalPath}`;
+  
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  };
+
+  const serviceJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Silvia Gómez - Psicoterapia Online",
+    "description": description,
+    "url": canonicalUrl,
+    "provider": {
+      "@type": "Person",
+      "name": "Silvia Gómez",
+      "jobTitle": "Psicoterapeuta",
+      "url": SITE_URL
+    },
+    "serviceType": "Psicoterapia online",
+    "areaServed": {
+      "@type": "Country",
+      "name": "Suiza"
+    },
+    "availableLanguage": "Español"
+  };
+
   return (
     <>
       <Helmet>
         <title>{title}</title>
         <meta name="description" content={description} />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href={window.location.href} />
+        <link rel="canonical" href={canonicalUrl} />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:url" content={canonicalUrl} />
+        <meta property="og:type" content="website" />
+        <script type="application/ld+json">{JSON.stringify(faqJsonLd)}</script>
+        <script type="application/ld+json">{JSON.stringify(serviceJsonLd)}</script>
       </Helmet>
       
       <div className="min-h-screen bg-background">

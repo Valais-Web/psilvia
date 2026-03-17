@@ -48,6 +48,7 @@ const DepresionSuiza = () => {
       heroTitle="Supera la depresión en Suiza"
       heroSubtitle="Acompañamiento psicológico profesional para salir del estado depresivo, recuperar la energía y reconectar con lo que te importa."
       badgeText="Depresión y estado de ánimo"
+      canonicalPath="/depresion-suiza"
       faqs={faqs}
       disclaimer="Aviso legal: Los servicios ofrecidos son de psicoterapia privada en modalidad online. No están cubiertos por el seguro de salud suizo ni forman parte del sistema sanitario del país. La habilitación profesional corresponde a la formación obtenida en México y España."
     >

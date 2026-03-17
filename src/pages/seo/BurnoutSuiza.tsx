@@ -48,6 +48,7 @@ const BurnoutSuiza = () => {
       heroTitle="Recupera el equilibrio del burnout"
       heroSubtitle="Tratamiento psicológico para superar el agotamiento laboral, establecer límites saludables y reconectar con tu bienestar."
       badgeText="Burnout y estrés laboral"
+      canonicalPath="/burnout-suiza"
       faqs={faqs}
       disclaimer="Nota legal: Este servicio corresponde a psicoterapia privada en modalidad online. No constituye una prestación del sistema sanitario suizo ni está cubierto por seguros de salud en Suiza. La formación profesional fue obtenida en México y España."
     >

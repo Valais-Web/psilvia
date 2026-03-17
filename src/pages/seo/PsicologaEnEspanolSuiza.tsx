@@ -48,6 +48,7 @@ const PsicologaEnEspanolSuiza = () => {
       heroTitle="Psicóloga en español en Suiza"
       heroSubtitle="Terapia en tu lengua materna para conectar más profundamente con tus emociones y avanzar en tu proceso de cambio."
       badgeText="En español"
+      canonicalPath="/psicologa-en-espanol-suiza"
       faqs={faqs}
       disclaimer="Aviso legal: Esta consulta ofrece servicios de psicoterapia privada online. Las sesiones no están cubiertas por seguros de salud suizos ni forman parte del sistema sanitario de Suiza. La formación profesional fue obtenida en instituciones de México y España."
     >

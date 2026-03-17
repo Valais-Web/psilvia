@@ -48,6 +48,7 @@ const PsicologaEnBerna = () => {
       heroTitle="Psicóloga online en Berna"
       heroSubtitle="Atención psicológica en español para la comunidad diplomática e internacional de la capital federal suiza."
       badgeText="Berna"
+      canonicalPath="/psicologa-en-berna"
       faqs={faqs}
       disclaimer="Información legal: Los servicios corresponden a psicoterapia privada en modalidad online. No forman parte del sistema de salud suizo ni están cubiertos por seguros médicos en Suiza. La formación profesional fue completada en México y España."
     >
