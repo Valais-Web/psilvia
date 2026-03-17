@@ -48,6 +48,7 @@ const PsicologaEnGinebra = () => {
       heroTitle="Psicóloga online en Ginebra"
       heroSubtitle="Atención psicológica en español para la comunidad internacional de Ginebra. Comprendo los desafíos de vivir en la capital diplomática del mundo."
       badgeText="Ginebra"
+      canonicalPath="/psicologa-en-ginebra"
       faqs={faqs}
       disclaimer="Nota legal: Los servicios ofrecidos son de psicoterapia privada en modalidad online. No constituyen una prestación del sistema sanitario suizo ni están cubiertos por seguros de salud en Suiza. La formación profesional fue obtenida en México y España."
     >

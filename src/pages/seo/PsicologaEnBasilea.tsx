@@ -48,6 +48,7 @@ const PsicologaEnBasilea = () => {
       heroTitle="Psicóloga online en Basilea"
       heroSubtitle="Atención psicológica en español para la comunidad científica y farmacéutica de la región trinacional de Basilea."
       badgeText="Basilea"
+      canonicalPath="/psicologa-en-basilea"
       faqs={faqs}
       disclaimer="Aviso legal: Los servicios ofrecidos son de psicoterapia privada en modalidad online. No forman parte del sistema sanitario suizo ni están cubiertos por seguros de salud en Suiza. La formación profesional fue obtenida en México y España."
     >

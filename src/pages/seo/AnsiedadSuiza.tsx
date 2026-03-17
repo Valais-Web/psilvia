@@ -48,6 +48,7 @@ const AnsiedadSuiza = () => {
       heroTitle="Supera la ansiedad en Suiza"
       heroSubtitle="Tratamiento psicológico online basado en la evidencia para manejar la ansiedad, las preocupaciones constantes y el estrés de vivir en Suiza."
       badgeText="Ansiedad y estrés"
+      canonicalPath="/ansiedad-suiza"
       faqs={faqs}
       disclaimer="Nota legal: Este servicio corresponde a psicoterapia privada online. No forma parte del sistema sanitario suizo ni está cubierto por seguros de salud en Suiza. La formación profesional fue obtenida en México y España."
     >

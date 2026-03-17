@@ -48,6 +48,7 @@ const PsicologaPsicoterapeutaSuiza = () => {
       heroTitle="Psicóloga y psicoterapeuta en Suiza"
       heroSubtitle="Atención psicológica privada online con formación internacional y un compromiso claro con la ética y la transparencia profesional."
       badgeText="Sobre mi práctica"
+      canonicalPath="/psicologa-psicoterapeuta-suiza"
       faqs={faqs}
       disclaimer="Información legal: Los servicios de psicoterapia que se ofrecen son privados y se brindan en modalidad online. No forman parte del sistema de salud suizo ni están cubiertos por seguros médicos en Suiza. La formación profesional fue completada en instituciones educativas de México y España."
     >

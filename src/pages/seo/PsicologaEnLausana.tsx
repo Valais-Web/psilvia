@@ -48,6 +48,7 @@ const PsicologaEnLausana = () => {
       heroTitle="Psicóloga online en Lausana"
       heroSubtitle="Atención psicológica en español para la comunidad académica e internacional de Lausana. Comprendo los desafíos del ambiente universitario y deportivo."
       badgeText="Lausana"
+      canonicalPath="/psicologa-en-lausana"
       faqs={faqs}
       disclaimer="Aviso legal: Este servicio corresponde a psicoterapia privada online. No forma parte del sistema sanitario suizo ni está cubierto por seguros de salud en Suiza. La habilitación profesional corresponde a la formación obtenida en México y España."
     >

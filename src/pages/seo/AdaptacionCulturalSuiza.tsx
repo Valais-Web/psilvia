@@ -48,6 +48,7 @@ const AdaptacionCulturalSuiza = () => {
       heroTitle="Adaptación cultural y duelo migratorio"
       heroSubtitle="Acompañamiento psicológico para procesar las pérdidas de la migración y construir una nueva vida sin renunciar a quien eres."
       badgeText="Expatriados y migrantes"
+      canonicalPath="/adaptacion-cultural-suiza"
       faqs={faqs}
       disclaimer="Información legal: Los servicios ofrecidos corresponden a psicoterapia privada en modalidad online. No forman parte del sistema sanitario suizo ni están cubiertos por seguros médicos en Suiza. La formación profesional fue obtenida en instituciones de México y España."
     >
