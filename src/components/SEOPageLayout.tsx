@@ -20,6 +20,7 @@ interface SEOPageLayoutProps {
   heroTitle: string;
   heroSubtitle: string;
   badgeText?: string;
+  canonicalPath: string;
   children: React.ReactNode;
   faqs: FAQ[];
   disclaimer?: string;
