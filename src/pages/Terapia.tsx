@@ -4,6 +4,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { CheckCircle2, Mail } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { PageSEO } from "@/components/PageSEO";
 import silviaPhoto from "@/assets/Silvia5.webp";
 import selfCare from "@/assets/self-care.jpg";
 
@@ -15,7 +16,24 @@ const Terapia = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <PageSEO
+        title="Terapia online en español · Sesiones desde 80 CHF"
+        description="Psicoterapia online en español con enfoques TCC, ACT y DBT. Sesiones de 55 min, confidenciales y flexibles. Reserva tu primera cita."
+        path="/terapia"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          name: "Psicoterapia online en español — Silvia Gómez",
+          description: "Servicio de psicoterapia online en español con enfoques cognitivo-conductuales y contextuales (TCC, ACT, DBT).",
+          serviceType: "Psicoterapia online",
+          url: "https://psilvia.com/terapia",
+          availableLanguage: "Español",
+          provider: { "@type": "Person", name: "Silvia Gómez", url: "https://psilvia.com/" },
+          offers: { "@type": "Offer", price: "80", priceCurrency: "CHF", description: "Sesión individual de 55 minutos" },
+        }}
+      />
       <Header />
+      <main>
 
       {/* Hero Section */}
       <section className="py-16 md:py-24 bg-gradient-to-b from-muted/50 to-background">

@@ -91,6 +91,7 @@ export const SEOPageLayout = ({
       
       <div className="min-h-screen bg-background">
         <Header />
+        <main>
 
         {/* Hero Section */}
         <section className="py-16 md:py-20 bg-gradient-to-b from-muted/50 to-background">

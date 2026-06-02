@@ -3,13 +3,28 @@ import { Badge } from "@/components/ui/badge";
 import { Mail } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { PageSEO } from "@/components/PageSEO";
 import silviaPhoto from "@/assets/Silvia4.webp";
 import { BookingDialog } from "@/components/BookingDialog";
 
 const SobreMi = () => {
   return (
     <div className="min-h-screen bg-background">
+      <PageSEO
+        title="Sobre mí · Silvia Gómez, psicóloga y psicoterapeuta"
+        description="Conoce mi formación (licenciatura en México y dos maestrías en España), enfoques (TCC, ACT, DBT) y forma de trabajar en psicoterapia online en español."
+        path="/sobre-mi"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "AboutPage",
+          name: "Sobre Silvia Gómez",
+          url: "https://psilvia.com/sobre-mi",
+          inLanguage: "es",
+          mainEntity: { "@type": "Person", name: "Silvia Gómez", jobTitle: "Psicóloga y psicoterapeuta", url: "https://psilvia.com/" },
+        }}
+      />
       <Header />
+      <main>
 
       {/* Hero Section */}
       <section className="py-16 md:py-24">
