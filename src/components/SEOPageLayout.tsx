@@ -129,6 +129,9 @@ export const SEOPageLayout = ({
         {/* Pricing Section */}
         <section className="py-12 bg-primary/5">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+            <h2 className="text-2xl md:text-3xl font-bold text-center mb-6 text-foreground">
+              Tarifas de psicoterapia online
+            </h2>
             <Card className="border-primary/20 shadow-lg">
               <CardContent className="p-8">
                 <div className="flex flex-col md:flex-row items-center justify-between gap-6">
@@ -159,6 +162,9 @@ export const SEOPageLayout = ({
         {/* Benefits Section */}
         <section className="py-16">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
+            <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-foreground">
+              Ventajas de la psicoterapia online
+            </h2>
             <div className="grid md:grid-cols-3 gap-6">
               <Card>
                 <CardContent className="p-6 text-center space-y-3">
@@ -254,6 +260,9 @@ export const SEOPageLayout = ({
         {/* Trust Indicators */}
         <section className="py-12">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+            <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-foreground">
+              Por qué elegirme
+            </h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
               <div className="space-y-2">
                 <div className="w-10 h-10 bg-muted rounded-full flex items-center justify-center mx-auto">
