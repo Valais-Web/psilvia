@@ -260,6 +260,9 @@ export const SEOPageLayout = ({
         {/* Trust Indicators */}
         <section className="py-12">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+            <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-foreground">
+              Por qué elegirme
+            </h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
               <div className="space-y-2">
                 <div className="w-10 h-10 bg-muted rounded-full flex items-center justify-center mx-auto">
