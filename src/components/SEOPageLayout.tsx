@@ -162,6 +162,9 @@ export const SEOPageLayout = ({
         {/* Benefits Section */}
         <section className="py-16">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
+            <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-foreground">
+              Ventajas de la psicoterapia online
+            </h2>
             <div className="grid md:grid-cols-3 gap-6">
               <Card>
                 <CardContent className="p-6 text-center space-y-3">
