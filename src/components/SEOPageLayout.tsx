@@ -292,6 +292,7 @@ export const SEOPageLayout = ({
           </div>
         </section>
 
+        </main>
         <Footer />
       </div>
     </>

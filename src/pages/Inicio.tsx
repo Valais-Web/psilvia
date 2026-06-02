@@ -223,6 +223,7 @@ const Inicio = () => {
         </div>
       </section>
 
+      </main>
       <Footer />
     </div>
   );

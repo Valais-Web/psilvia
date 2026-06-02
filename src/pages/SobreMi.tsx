@@ -122,6 +122,7 @@ const SobreMi = () => {
         </div>
       </section>
 
+      </main>
       <Footer />
     </div>
   );

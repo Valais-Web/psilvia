@@ -312,6 +312,7 @@ const Terapia = () => {
         </div>
       </section>
 
+      </main>
       <Footer />
     </div>
   );

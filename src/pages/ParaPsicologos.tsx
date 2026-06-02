@@ -204,6 +204,7 @@ const ParaPsicologos = () => {
         </div>
       </section>
 
+      </main>
       <Footer />
     </div>
   );
