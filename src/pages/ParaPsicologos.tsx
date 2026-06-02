@@ -3,12 +3,28 @@ import { Card, CardContent } from "@/components/ui/card";
 import { FileText, BookOpen, Lightbulb, Mail } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { PageSEO } from "@/components/PageSEO";
 import mentalWellness from "@/assets/mental-wellness.jpg";
 
 const ParaPsicologos = () => {
   return (
     <div className="min-h-screen bg-background">
+      <PageSEO
+        title="Recursos para psicólogos · Plantillas TCC, ACT y DBT"
+        description="Materiales clínicos, plantillas y hojas de trabajo para psicoterapeutas que trabajan online. Enfoques TCC, ACT y DBT con un lenguaje claro y práctico."
+        path="/para-psicologos"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          name: "Recursos para psicoterapeutas",
+          description: "Plantillas, hojas de trabajo y materiales clínicos para psicólogos que trabajan online (TCC, ACT, DBT).",
+          url: "https://psilvia.com/para-psicologos",
+          inLanguage: "es",
+          about: { "@type": "Service", name: "Materiales clínicos para psicoterapeutas", serviceType: "Recursos profesionales para psicólogos", provider: { "@type": "Person", name: "Silvia Gómez" } },
+        }}
+      />
       <Header />
+      <main>
       
       {/* Hero Section */}
       <section className="py-16 md:py-24 bg-gradient-to-b from-muted/50 to-background">
@@ -188,6 +204,7 @@ const ParaPsicologos = () => {
         </div>
       </section>
 
+      </main>
       <Footer />
     </div>
   );
