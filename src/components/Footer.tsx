@@ -119,7 +119,12 @@ const Footer = () => {
         </div>
         
         <div className="mt-8 pt-8 border-t border-border text-center text-sm text-muted-foreground space-y-3">
-          <p>&copy; {new Date().getFullYear()} psilvia.com - Silvia Gomez. Todos los derechos reservados.</p>
+          <p>
+            &copy; {new Date().getFullYear()} psilvia.com · Silvia Gómez.{" "}
+            <Link to="/privacidad" className="hover:text-foreground transition-colors">
+              Política de privacidad
+            </Link>
+          </p>
           <a 
             href="https://valaisweb.ch" 
             target="_blank" 
@@ -127,7 +132,7 @@ const Footer = () => {
             className="inline-flex items-center gap-2 hover:opacity-80 transition-opacity"
           >
             <span className="text-xs">Website made by</span>
-            <img src={valaisWebLogo} alt="Valais Web" width="336" height="54" loading="lazy" className="h-5" />
+            <img src={valaisWebLogo} alt="Valais Web" width="336" height="54" loading="lazy" className="h-5 w-auto" />
           </a>
         </div>
       </div>
