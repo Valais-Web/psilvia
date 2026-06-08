@@ -43,7 +43,7 @@ const PsicologaEnEspanolSuiza = () => {
 
   return (
     <SEOPageLayout
-      title="Psicóloga en español en Suiza | Psicoterapia online para hispanohablantes"
+      title="Psicóloga en Español Suiza | Psicoterapia Hispanohablantes"
       description="Atención psicológica online en español para personas que viven en Suiza. Psicoterapia privada, cercana y basada en la evidencia."
       heroTitle="Psicóloga en español en Suiza"
       heroSubtitle="Terapia en tu lengua materna para conectar más profundamente con tus emociones y avanzar en tu proceso de cambio."

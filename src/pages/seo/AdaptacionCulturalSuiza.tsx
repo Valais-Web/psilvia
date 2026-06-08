@@ -43,8 +43,8 @@ const AdaptacionCulturalSuiza = () => {
 
   return (
     <SEOPageLayout
-      title="Adaptación cultural en Suiza | Psicoterapia online para expatriados"
-      description="Psicoterapia online para personas en proceso de adaptación cultural en Suiza. Atención psicológica en español."
+      title="Adaptación cultural en Suiza | Psicoterapia en español"
+      description="Psicoterapia online para la adaptación cultural y el duelo migratorio en Suiza. Acompañamiento en español para latinoamericanos y expatriados hispanohablantes."
       heroTitle="Adaptación cultural y duelo migratorio"
       heroSubtitle="Acompañamiento psicológico para procesar las pérdidas de la migración y construir una nueva vida sin renunciar a quien eres."
       badgeText="Expatriados y migrantes"

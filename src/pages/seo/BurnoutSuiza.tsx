@@ -44,7 +44,7 @@ const BurnoutSuiza = () => {
   return (
     <SEOPageLayout
       title="Burnout en Suiza | Psicoterapia online para estrés laboral"
-      description="Psicoterapia online para burnout y estrés laboral en Suiza. Atención privada y flexible en español."
+      description="Psicoterapia online para superar el burnout y el estrés laboral en Suiza. Atención privada en español, basada en la evidencia y flexible. Sin lista de espera."
       heroTitle="Recupera el equilibrio del burnout"
       heroSubtitle="Tratamiento psicológico para superar el agotamiento laboral, establecer límites saludables y reconectar con tu bienestar."
       badgeText="Burnout y estrés laboral"
