@@ -39,9 +39,24 @@ export const SEOPageLayout = ({
 }: SEOPageLayoutProps) => {
   const canonicalUrl = `${SITE_URL}${canonicalPath}`;
   
+  const AUTHOR = {
+    "@type": "Person",
+    "name": "Silvia Gómez",
+    "jobTitle": "Psicóloga y psicoterapeuta",
+    "url": SITE_URL,
+    "image": `${SITE_URL}/silvia-photo.webp`,
+    "sameAs": [
+      "https://www.instagram.com/psilvia.terapia/",
+      "https://www.tiktok.com/@psilvia.gomez",
+      "https://www.linkedin.com/in/silvia-g%C3%B3mez-rinc%C3%B3n-070b3b128/"
+    ]
+  };
+
   const faqJsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
+    "author": AUTHOR,
+    "dateModified": "2026-06-08",
     "mainEntity": faqs.map(faq => ({
       "@type": "Question",
       "name": faq.question,
@@ -58,18 +73,20 @@ export const SEOPageLayout = ({
     "name": "Silvia Gómez - Psicoterapia Online",
     "description": description,
     "url": canonicalUrl,
-    "provider": {
-      "@type": "Person",
-      "name": "Silvia Gómez",
-      "jobTitle": "Psicoterapeuta",
-      "url": SITE_URL
-    },
+    "dateModified": "2026-06-08",
+    "provider": AUTHOR,
     "serviceType": "Psicoterapia online",
     "areaServed": {
       "@type": "Country",
       "name": "Suiza"
     },
-    "availableLanguage": "Español"
+    "availableLanguage": "Español",
+    "offers": {
+      "@type": "Offer",
+      "price": "80",
+      "priceCurrency": "CHF",
+      "description": "Sesión individual de 55 minutos"
+    }
   };
 
   return (
