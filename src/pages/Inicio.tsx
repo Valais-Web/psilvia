@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Brain, Target, Heart, CheckCircle2 } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { PageSEO } from "@/components/PageSEO";
 import silviaPhoto from "@/assets/Silvia1.webp";
 import silviaPhoto2 from "@/assets/Silvia3.webp";
 import therapyWorkspace from "@/assets/therapy-workspace.jpg";
@@ -14,7 +15,17 @@ import { BookingDialog } from "@/components/BookingDialog";
 const Inicio = () => {
   return (
     <div className="min-h-screen bg-background">
+      <PageSEO
+        title="Silvia Gómez · Psicoterapia online en español"
+        description="Psicoterapia online en español basada en la evidencia (TCC, ACT, DBT). Sesiones confidenciales y flexibles para hispanohablantes en Suiza y otros países."
+        path="/"
+        jsonLd={[
+          { "@context": "https://schema.org", "@type": "WebSite", name: "Silvia Gómez · Psicoterapia online", url: "https://psilvia.com/", inLanguage: "es" },
+          { "@context": "https://schema.org", "@type": "Person", name: "Silvia Gómez", jobTitle: "Psicóloga y psicoterapeuta", url: "https://psilvia.com/", image: "https://psilvia.com/silvia-photo.png", sameAs: ["https://www.instagram.com/psilvia.terapia/", "https://www.tiktok.com/@psilvia.gomez"] },
+        ]}
+      />
       <Header />
+      <main>
 
       {/* Hero Section */}
       <section className="py-16 md:py-24">
@@ -212,6 +223,7 @@ const Inicio = () => {
         </div>
       </section>
 
+      </main>
       <Footer />
     </div>
   );
