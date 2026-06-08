@@ -6,8 +6,8 @@
     <link rel="preconnect" href="https://www.google-analytics.com">
     <link rel="dns-prefetch" href="https://calendly.com">
 
-    <!-- Preload LCP hero image (stable public URL, browser fetches before JS runs) -->
-    <link rel="preload" as="image" href="/Silvia1.webp" fetchpriority="high">
+    <!-- Preload LCP hero image on desktop only (below fold on mobile, would steal bandwidth) -->
+    <link rel="preload" as="image" href="/Silvia1.webp" fetchpriority="high" media="(min-width: 769px)">
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -69,15 +69,22 @@
     }
     </script>
 
-    <!-- GTM deferred until after page paint to avoid blocking FCP/LCP -->
+    <!-- GTM loads during browser idle time (after TTI), keeping it out of the TBT window -->
     <script>
-      window.addEventListener('load', function() {
-        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-MC6VNW43');
-      });
+      (function() {
+        function loadGTM() {
+          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-MC6VNW43');
+        }
+        if ('requestIdleCallback' in window) {
+          requestIdleCallback(loadGTM, { timeout: 4000 });
+        } else {
+          setTimeout(loadGTM, 4000);
+        }
+      })();
     </script>
   </head>
 

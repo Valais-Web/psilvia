@@ -60,7 +60,7 @@ const Inicio = () => {
                 src="/Silvia1.webp"
                 alt="Espacio seguro y acogedor para psicoterapia online con ambiente cálido y tranquilo"
                 width="600"
-                height="750"
+                height="603"
                 loading="eager"
                 fetchPriority="high"
                 className="rounded-3xl w-full max-w-md mx-auto shadow-lg"
@@ -146,7 +146,7 @@ const Inicio = () => {
                 src={therapyWorkspace}
                 alt="Espacio de trabajo cálido y acogedor para terapia online con laptop, té y plantas"
                 width="800"
-                height="600"
+                height="450"
                 loading="lazy"
                 className="rounded-3xl w-full shadow-lg"
               />
@@ -209,7 +209,7 @@ const Inicio = () => {
                 src={silviaPhoto2}
                 alt="Retrato de Silvia Gómez, psicóloga, sonriendo, en un entorno luminoso y tranquilo"
                 width="600"
-                height="750"
+                height="601"
                 loading="lazy"
                 className="rounded-3xl w-full max-w-md mx-auto shadow-lg"
               />
