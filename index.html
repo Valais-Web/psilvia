@@ -1,31 +1,84 @@
 <!doctype html>
 <html lang="es">
   <head>
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-MC6VNW43');</script>
-    <!-- End Google Tag Manager -->
+    <!-- Preconnect to key third-party origins before any JS loads -->
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://calendly.com">
+
+    <!-- Preload LCP hero image (stable public URL, browser fetches before JS runs) -->
+    <link rel="preload" as="image" href="/Silvia1.webp" fetchpriority="high">
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Silvia Gomez - Psicoterapia Online</title>
+    <title>Silvia Gómez · Psicoterapia online en español</title>
 
-    <meta name="description" content="Psicoterapia online basada en la evidencia. Terapia cognitivo-conductual y contextual para hispanohablantes. Recursos profesionales para psicoterapeutas." />
+    <meta name="description" content="Psicoterapia online en español basada en la evidencia (TCC, ACT, DBT). Sesiones confidenciales y flexibles para hispanohablantes en Suiza y otros países." />
     <meta name="author" content="Valais Web (https://valaisweb.ch)" />
 
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+
+    <!-- Canonical (homepage; React Helmet overrides this for inner pages after hydration) -->
+    <link rel="canonical" href="https://psilvia.com/">
+
+    <!-- Hreflang: Spanish-only site, self-referential -->
+    <link rel="alternate" hreflang="es" href="https://psilvia.com/">
+    <link rel="alternate" hreflang="x-default" href="https://psilvia.com/">
+
     <!-- Open Graph -->
-    <meta property="og:title" content="Silvia Gomez - Psicoterapia Online" />
-    <meta property="og:description" content="Psicoterapia online basada en la evidencia. Sesiones confidenciales y flexibles desde enfoques TCC, ACT y DBT." />
+    <meta property="og:title" content="Silvia Gómez · Psicoterapia online en español" />
+    <meta property="og:description" content="Psicoterapia online en español basada en la evidencia (TCC, ACT, DBT). Sesiones confidenciales y flexibles para hispanohablantes en Suiza." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://psilvia.com/" />
-    <meta property="og:image" content="https://psilvia.com/silvia-photo.png" />
+    <meta property="og:image" content="https://psilvia.com/silvia-photo.webp" />
+    <meta property="og:image:alt" content="Silvia Gómez, psicóloga y psicoterapeuta" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
 
-    <!-- Twitter -->
+    <!-- Twitter / X -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="https://psilvia.com/silvia-photo.png" />
+    <meta name="twitter:title" content="Silvia Gómez · Psicoterapia online en español" />
+    <meta name="twitter:description" content="Psicoterapia online en español basada en la evidencia (TCC, ACT, DBT). Sesiones confidenciales y flexibles para hispanohablantes en Suiza." />
+    <meta name="twitter:image" content="https://psilvia.com/silvia-photo.webp" />
+    <meta name="twitter:image:alt" content="Silvia Gómez, psicóloga y psicoterapeuta" />
+
+    <!-- Static JSON-LD schema: visible to non-JS crawlers and AI assistants -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Silvia Gómez Psicoterapia",
+      "description": "Psicoterapia online en español basada en la evidencia para hispanohablantes en Suiza y el mundo.",
+      "url": "https://psilvia.com",
+      "image": "https://psilvia.com/silvia-photo.webp",
+      "priceRange": "CHF 80-90",
+      "availableLanguage": "Spanish",
+      "provider": {
+        "@type": "Person",
+        "name": "Silvia Gómez",
+        "jobTitle": "Psicóloga y psicoterapeuta",
+        "url": "https://psilvia.com",
+        "image": "https://psilvia.com/silvia-photo.webp",
+        "knowsLanguage": "es",
+        "sameAs": [
+          "https://www.instagram.com/psilvia.terapia/",
+          "https://www.tiktok.com/@psilvia.gomez"
+        ]
+      }
+    }
+    </script>
+
+    <!-- GTM deferred until after page paint to avoid blocking FCP/LCP -->
+    <script>
+      window.addEventListener('load', function() {
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MC6VNW43');
+      });
+    </script>
   </head>
 
   <body>

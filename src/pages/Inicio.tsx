@@ -6,10 +6,8 @@ import { Brain, Target, Heart, CheckCircle2 } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { PageSEO } from "@/components/PageSEO";
-import silviaPhoto from "@/assets/Silvia1.webp";
 import silviaPhoto2 from "@/assets/Silvia3.webp";
-import therapyWorkspace from "@/assets/therapy-workspace.jpg";
-import mentalWellness from "@/assets/mental-wellness.jpg";
+import therapyWorkspace from "@/assets/therapy-workspace.webp";
 import { BookingDialog } from "@/components/BookingDialog";
 
 const Inicio = () => {
@@ -21,7 +19,7 @@ const Inicio = () => {
         path="/"
         jsonLd={[
           { "@context": "https://schema.org", "@type": "WebSite", name: "Silvia Gómez · Psicoterapia online", url: "https://psilvia.com/", inLanguage: "es" },
-          { "@context": "https://schema.org", "@type": "Person", name: "Silvia Gómez", jobTitle: "Psicóloga y psicoterapeuta", url: "https://psilvia.com/", image: "https://psilvia.com/silvia-photo.png", sameAs: ["https://www.instagram.com/psilvia.terapia/", "https://www.tiktok.com/@psilvia.gomez"] },
+          { "@context": "https://schema.org", "@type": "Person", name: "Silvia Gómez", jobTitle: "Psicóloga y psicoterapeuta", url: "https://psilvia.com/", image: "https://psilvia.com/silvia-photo.webp", sameAs: ["https://www.instagram.com/psilvia.terapia/", "https://www.tiktok.com/@psilvia.gomez"] },
         ]}
       />
       <Header />
@@ -59,8 +57,12 @@ const Inicio = () => {
             </div>
             <div>
               <img
-                src={silviaPhoto}
+                src="/Silvia1.webp"
                 alt="Espacio seguro y acogedor para psicoterapia online con ambiente cálido y tranquilo"
+                width="600"
+                height="750"
+                loading="eager"
+                fetchPriority="high"
                 className="rounded-3xl w-full max-w-md mx-auto shadow-lg"
               />
             </div>
@@ -143,6 +145,9 @@ const Inicio = () => {
               <img
                 src={therapyWorkspace}
                 alt="Espacio de trabajo cálido y acogedor para terapia online con laptop, té y plantas"
+                width="800"
+                height="600"
+                loading="lazy"
                 className="rounded-3xl w-full shadow-lg"
               />
             </div>
@@ -203,6 +208,9 @@ const Inicio = () => {
               <img
                 src={silviaPhoto2}
                 alt="Retrato de Silvia Gómez, psicóloga, sonriendo, en un entorno luminoso y tranquilo"
+                width="600"
+                height="750"
+                loading="lazy"
                 className="rounded-3xl w-full max-w-md mx-auto shadow-lg"
               />
             </div>

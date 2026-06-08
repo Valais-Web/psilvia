@@ -38,6 +38,10 @@ const SobreMi = () => {
               <img
                 src={silviaPhoto}
                 alt="Retrato profesional de Silvia Gómez, psicoterapeuta"
+                width="600"
+                height="750"
+                loading="eager"
+                fetchPriority="high"
                 className="rounded-3xl w-full shadow-2xl"
               />
             </div>

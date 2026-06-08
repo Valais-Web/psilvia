@@ -7,8 +7,6 @@ import { Badge } from "./ui/badge";
 import Header from "./Header";
 import Footer from "./Footer";
 import { Video, Globe, Brain, Clock, CheckCircle2, MessageCircle, Shield } from "lucide-react";
-import silviaPhoto from "@/assets/Silvia1.webp";
-
 interface FAQ {
   question: string;
   answer: string;
@@ -85,6 +83,13 @@ export const SEOPageLayout = ({
         <meta property="og:description" content={description} />
         <meta property="og:url" content={canonicalUrl} />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://psilvia.com/silvia-photo.webp" />
+        <meta property="og:image:alt" content="Silvia Gómez, psicóloga y psicoterapeuta" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://psilvia.com/silvia-photo.webp" />
+        <meta name="twitter:image:alt" content="Silvia Gómez, psicóloga y psicoterapeuta" />
+        <link rel="alternate" hreflang="es" href={canonicalUrl} />
+        <link rel="alternate" hreflang="x-default" href={canonicalUrl} />
         <script type="application/ld+json">{JSON.stringify(faqJsonLd)}</script>
         <script type="application/ld+json">{JSON.stringify(serviceJsonLd)}</script>
       </Helmet>
@@ -117,8 +122,12 @@ export const SEOPageLayout = ({
               </div>
               <div className="order-1 md:order-2">
                 <img
-                  src={silviaPhoto}
+                  src="/Silvia1.webp"
                   alt="Silvia Gómez, psicoterapeuta"
+                  width="600"
+                  height="750"
+                  loading="eager"
+                  fetchPriority="high"
                   className="w-full max-w-md mx-auto h-auto rounded-2xl shadow-lg"
                 />
               </div>

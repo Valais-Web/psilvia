@@ -127,7 +127,7 @@ const Footer = () => {
             className="inline-flex items-center gap-2 hover:opacity-80 transition-opacity"
           >
             <span className="text-xs">Website made by</span>
-            <img src={valaisWebLogo} alt="Valais Web" className="h-5" />
+            <img src={valaisWebLogo} alt="Valais Web" width="100" height="28" loading="lazy" className="h-5" />
           </a>
         </div>
       </div>
