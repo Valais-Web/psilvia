@@ -9,6 +9,9 @@
     <!-- Preload LCP hero image on desktop only (below fold on mobile, would steal bandwidth) -->
     <link rel="preload" as="image" href="/Silvia1.webp" fetchpriority="high" media="(min-width: 769px)">
 
+    <!-- Inline background colour prevents flash while async CSS loads -->
+    <style>body{background-color:hsl(40,40%,98%)}</style>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Silvia Gómez · Psicoterapia online en español</title>
@@ -18,9 +21,6 @@
 
     <!-- Favicon -->
     <link rel="icon" href="/favicon.ico" sizes="any">
-
-    <!-- Canonical (homepage; React Helmet overrides this for inner pages after hydration) -->
-    <link rel="canonical" href="https://psilvia.com/">
 
     <!-- Hreflang: Spanish-only site, self-referential -->
     <link rel="alternate" hreflang="es" href="https://psilvia.com/">
