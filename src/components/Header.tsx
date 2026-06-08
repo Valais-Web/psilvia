@@ -14,7 +14,7 @@ const Header = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
         <div className="flex h-20 items-center justify-between">
           <Link to="/" className="flex items-center">
-            <img src={logo} alt="psilvia - Silvia Gomez Sicoterapia" width="120" height="40" className="h-10 sm:h-14 w-auto" />
+            <img src={logo} alt="psilvia - Silvia Gomez Sicoterapia" width="120" height="34" className="h-10 sm:h-14 w-auto" />
           </Link>
           
           <nav className="hidden md:flex items-center gap-8">

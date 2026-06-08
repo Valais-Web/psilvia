@@ -69,7 +69,7 @@ const Terapia = () => {
                 src={silviaPhoto}
                 alt="Silvia Gómez, psicoterapeuta"
                 width="600"
-                height="750"
+                height="600"
                 loading="eager"
                 fetchPriority="high"
                 className="w-full h-auto rounded-2xl shadow-lg"
@@ -207,7 +207,7 @@ const Terapia = () => {
                 src={selfCare}
                 alt="Ilustración de autocuidado y bienestar emocional en terapia"
                 width="800"
-                height="600"
+                height="800"
                 loading="lazy"
                 className="w-full h-auto rounded-3xl shadow-lg"
               />

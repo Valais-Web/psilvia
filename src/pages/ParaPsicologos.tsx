@@ -140,7 +140,7 @@ const ParaPsicologos = () => {
                 src={mentalWellness}
                 alt="Ilustración de bienestar mental y crecimiento profesional en psicoterapia"
                 width="800"
-                height="600"
+                height="800"
                 loading="lazy"
                 className="w-full h-auto rounded-3xl shadow-lg"
               />
