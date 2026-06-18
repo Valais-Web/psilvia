@@ -6,7 +6,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { PageSEO } from "@/components/PageSEO";
 import silviaPhoto from "@/assets/Silvia5.webp";
-import selfCare from "@/assets/self-care.jpg";
+import selfCare from "@/assets/self-care.webp";
 
 const Terapia = () => {
   const scrollToReserva = () => {
@@ -68,6 +68,10 @@ const Terapia = () => {
               <img
                 src={silviaPhoto}
                 alt="Silvia Gómez, psicoterapeuta"
+                width="600"
+                height="600"
+                loading="eager"
+                fetchPriority="high"
                 className="w-full h-auto rounded-2xl shadow-lg"
               />
             </div>
@@ -202,6 +206,9 @@ const Terapia = () => {
               <img
                 src={selfCare}
                 alt="Ilustración de autocuidado y bienestar emocional en terapia"
+                width="800"
+                height="800"
+                loading="lazy"
                 className="w-full h-auto rounded-3xl shadow-lg"
               />
             </div>

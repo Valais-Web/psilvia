@@ -4,7 +4,7 @@ import { FileText, BookOpen, Lightbulb, Mail } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { PageSEO } from "@/components/PageSEO";
-import mentalWellness from "@/assets/mental-wellness.jpg";
+import mentalWellness from "@/assets/mental-wellness.webp";
 
 const ParaPsicologos = () => {
   return (
@@ -136,9 +136,12 @@ const ParaPsicologos = () => {
               </div>
             </div>
             <div className="order-1 md:order-2">
-              <img 
+              <img
                 src={mentalWellness}
-                alt="Ilustración de bienestar mental y crecimiento profesional en psicoterapia" 
+                alt="Ilustración de bienestar mental y crecimiento profesional en psicoterapia"
+                width="800"
+                height="800"
+                loading="lazy"
                 className="w-full h-auto rounded-3xl shadow-lg"
               />
             </div>

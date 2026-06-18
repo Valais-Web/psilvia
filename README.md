@@ -4,7 +4,7 @@
 
 Visit the website: [psilvia.com](https://psilvia.com)
 
-This project is a lightweight, conversion-focused website built for psilvia sicoterapia, an online psychotherapy practice offering evidence-based therapy in Spanish.
+This project is a lightweight, conversion-focused website built for psilvia psicoterapia, an online psychotherapy practice offering evidence-based therapy in Spanish.
 The site is designed to be warm, accessible, and easy to navigate, guiding two main audiences:
 
 Individuals seeking online psychotherapy (TCC, ACT, DBT approaches)

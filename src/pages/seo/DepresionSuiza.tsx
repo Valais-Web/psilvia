@@ -43,8 +43,8 @@ const DepresionSuiza = () => {
 
   return (
     <SEOPageLayout
-      title="Depresión en Suiza | Atención psicológica online"
-      description="Acompañamiento psicológico online para personas con depresión en Suiza. Psicoterapia privada en español."
+      title="Depresión en Suiza | Psicoterapia online en español"
+      description="Psicoterapia online para la depresión en Suiza. Enfoque TCC, ACT y DBT en español, con sesiones privadas y flexibles para hispanohablantes. 80 CHF la sesión."
       heroTitle="Supera la depresión en Suiza"
       heroSubtitle="Acompañamiento psicológico profesional para salir del estado depresivo, recuperar la energía y reconectar con lo que te importa."
       badgeText="Depresión y estado de ánimo"

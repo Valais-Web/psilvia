@@ -9,6 +9,7 @@ import Terapia from "./pages/Terapia";
 import ParaPsicologos from "./pages/ParaPsicologos";
 import SobreMi from "./pages/SobreMi";
 import NotFound from "./pages/NotFound";
+import Privacidad from "./pages/Privacidad";
 
 // SEO Pages
 import PsicoterapiaOnlineSuiza from "./pages/seo/PsicoterapiaOnlineSuiza";
@@ -53,6 +54,8 @@ const App = () => (
             <Route path="/psicologa-en-berna" element={<PsicologaEnBerna />} />
             <Route path="/psicologa-en-basilea" element={<PsicologaEnBasilea />} />
             
+            <Route path="/privacidad" element={<Privacidad />} />
+
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
