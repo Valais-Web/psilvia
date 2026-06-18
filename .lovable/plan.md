@@ -1,66 +1,59 @@
+## Résoudre le conflit de merge dans `vite.config.ts`
 
-# Add static prerendering for LLM/AI search discovery
+Les deux branches ont ajouté un plugin différent au même endroit :
+- `dev` → `prerender(...)` (prerendering statique pour SEO/LLM)
+- `main` → `asyncCssPlugin()` (probablement chargement CSS asynchrone)
 
-## Goal
-Every route in `App.tsx` is emitted as a static `.html` file at build time, with the rendered DOM, all `react-helmet-async` meta tags, and JSON-LD already in the markup. Crawlers that don't execute JS (GPTBot, ClaudeBot, PerplexityBot, most AI answer engines, social previews) see the real page; humans still get the SPA hydration after first paint.
+Les deux sont compatibles et complémentaires — il faut **garder les deux**, pas choisir.
 
-## What changes
+### Résolution
 
-1. **Add `vite-plugin-prerender`** (Puppeteer-based, runs only at build time, zero runtime cost).
-2. **Configure the route list** in `vite.config.ts` — all 16 routes already declared in `src/App.tsx`:
-   - `/`, `/terapia`, `/sobre-mi`, `/para-psicologos`
-   - 12 SEO pages under `/pages/seo/*`
-3. **Tell React to hydrate** instead of re-render when prerendered markup is present. Small edit in `src/main.tsx` (`hydrateRoot` if `#root` has children, else `createRoot`).
-4. **Verify** by building locally, opening `dist/ansiedad-suiza/index.html`, and confirming the `<h1>`, FAQ content, `<title>`, and JSON-LD are all present in the raw HTML.
-
-## Technical details
-
-**`vite.config.ts`** — add the plugin with the route list and a renderer that waits for Helmet to flush:
+Remplacer le bloc en conflit (marqueurs `<<<<<<<`, `=======`, `>>>>>>>` inclus) par :
 
 ```ts
-import prerender from 'vite-plugin-prerender'
-const Renderer = require('vite-plugin-prerender/es6-renderer')
-
-// inside plugins:
-prerender({
-  staticDir: path.join(__dirname, 'dist'),
-  routes: [
-    '/', '/terapia', '/sobre-mi', '/para-psicologos',
-    '/psicologa-en-espanol-suiza',
-    '/psicologa-psicoterapeuta-suiza',
-    '/psicoterapia-online-suiza',
-    '/ansiedad-suiza', '/depresion-suiza', '/burnout-suiza',
-    '/adaptacion-cultural-suiza',
-    '/psicologa-en-ginebra', '/psicologa-en-lausana',
-    '/psicologa-en-zurich', '/psicologa-en-berna',
-    '/psicologa-en-basilea',
-  ],
-  renderer: new Renderer({
-    renderAfterDocumentEvent: 'render-event',
-    headless: true,
-  }),
-})
+    mode === "production" &&
+      prerender({
+        routes: PRERENDER_ROUTES,
+        renderer: "@prerenderer/renderer-puppeteer",
+        rendererOptions: {
+          renderAfterDocumentEvent: "render-event",
+          maxConcurrentRoutes: 4,
+          headless: true,
+          launchOptions: {
+            args: ["--no-sandbox", "--disable-setuid-sandbox"],
+          },
+        },
+      }),
+    asyncCssPlugin(),
 ```
 
-**`src/main.tsx`** — fire the render event after mount and use `hydrateRoot` when prerendered:
+### Étapes Git
 
-```ts
-const root = document.getElementById('root')!
-const app = <App />
-if (root.hasChildNodes()) hydrateRoot(root, app)
-else createRoot(root).render(app)
-document.dispatchEvent(new Event('render-event'))
+```bash
+# 1. Éditer vite.config.ts manuellement et appliquer le bloc ci-dessus
+# 2. Vérifier qu'il n'y a plus de marqueurs
+git diff --check
+# 3. Vérifier que l'import d'asyncCssPlugin existe bien en haut du fichier
+#    (sinon le récupérer depuis main : git show main:vite.config.ts | head)
+# 4. Tester le build
+npm run build
+# 5. Finaliser
+git add vite.config.ts
+git commit
 ```
 
-**Hosting**: works as-is on Lovable hosting. The SPA fallback still serves `index.html` for unknown paths; known paths now serve their pre-rendered file directly.
+### Points à vérifier après résolution
 
-## Trade-offs to know
+1. **Imports** en haut du fichier : `prerender` (de `@prerenderer/rollup-plugin`) ET la source d'`asyncCssPlugin` doivent tous les deux être importés. Si `main` n'a pas l'import de `prerender`, l'ajouter ; si `dev` n'a pas l'import d'`asyncCssPlugin`, l'ajouter.
+2. **Constante `PRERENDER_ROUTES`** : doit aussi être présente (vient de `dev`).
+3. **`package.json` / lockfile** : si `main` n'a pas `@prerenderer/rollup-plugin` + `@prerenderer/renderer-puppeteer` dans les devDependencies, autre conflit probable à résoudre de la même manière (garder les deux côtés).
+4. **Ordre des plugins** : `prerender` avant `asyncCssPlugin` est correct — le prerender capture le HTML final, et l'async CSS s'applique au bundle produit.
 
-- Build gets slower (~30–60s extra — Puppeteer spawns once and renders all 16 routes in sequence). Only affects publish, not preview.
-- Anything dynamic (Holaelo booking iframe, dialogs) still hydrates client-side — no change in behavior for users.
-- If you later add many more SEO pages, the route list lives in one place (`vite.config.ts`) and could be generated from a manifest.
+### Si je dois le faire à ta place
 
-## Out of scope
-- No copy or design changes.
-- No changes to routing, components, or the booking flow.
-- The low-CTR title/description rewrites from the previous turn are separate — happy to do those in a follow-up.
+Passe en mode build et je :
+1. Édite `vite.config.ts` pour garder les deux plugins,
+2. Vérifie/ajoute les imports manquants,
+3. Lance `npm run build` pour confirmer que tout passe.
+
+Dis-moi si tu veux aussi que je regarde le diff de `main` pour récupérer la définition exacte d'`asyncCssPlugin` (d'où il vient, sa config).
